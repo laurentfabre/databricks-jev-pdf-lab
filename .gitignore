@@ -1,0 +1,25 @@
+# Private data and local state must never enter this public research snapshot.
+.env
+.env.*
+!.env.example
+.databrickscfg
+.databricks/
+.agents/
+.codex/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+evidence/
+sources/
+private/
+artifacts/
+attempts/
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.pem
+*.key
+*.log

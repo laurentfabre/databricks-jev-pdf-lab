@@ -1,0 +1,27 @@
+{
+  "property_name": {"type":"string"},
+  "document_type": {"type":"string"},
+  "languages": {"type":"array","items":{"type":"string"}},
+  "items": {
+    "type":"array",
+    "description":"Every named room, suite, facility, experience, treatment, food dish, beverage or wine offered. Preserve each wine vintage and size and every menu line as a separate item where the source distinguishes it.",
+    "items": {"type":"object","properties":{
+      "name":{"type":"string"},
+      "kind":{"type":"string"},
+      "details":{"type":"string","description":"Source facts: ingredients, vintage, producer, location, room features, inclusions, restrictions or eligibility. Retain meaningful source details."},
+      "prices":{"type":"array","items":{"type":"object","properties":{
+        "amount":{"type":"number"},"currency":{"type":"string"},"basis":{"type":"string","description":"Size, portion, person, night, duration or other price condition verbatim; do not pair a price with a different item."}
+      }}},
+      "dimensions_capacity_duration":{"type":"string","description":"Any stated room area, capacity, bottle size, treatment or experience duration, preserving units."},
+      "dietary_markers":{"type":"array","items":{"type":"string"}},
+      "allergens":{"type":"array","items":{"type":"string"},"description":"Only allergens explicitly attributed by the source; never infer absence or safety."},
+      "source_pages":{"type":"array","items":{"type":"integer"}}
+    }}
+  },
+  "policies":{"type":"array","items":{"type":"object","properties":{
+    "topic":{"type":"string"},"text":{"type":"string"},"source_pages":{"type":"array","items":{"type":"integer"}}
+  }}},
+  "dietary_allergen_legend":{"type":"array","items":{"type":"object","properties":{
+    "marker":{"type":"string"},"meaning":{"type":"string"},"source_pages":{"type":"array","items":{"type":"integer"}}
+  }}}
+}

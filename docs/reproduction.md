@@ -10,14 +10,14 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 331 included synthetic tests: 93 from the initial snapshot, 21
+There are 352 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
 audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
-and 32 table-scope-candidate tests.
-The private project recorded 545 passing synthetic tests, including evaluators
+and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests.
+The private project recorded 566 passing synthetic tests, including evaluators
 not copied here. The public
-number must not be presented as 545.
+number must not be presented as 566.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -86,6 +86,14 @@ the same structural hypothesis, demonstrating why layout is not semantic proof.
 `table_scope_candidates.scan` has no I/O or model call; real returned spans are
 private source content. Tests do not reproduce the E37 corpus comparison or
 establish coverage on unseen layouts.
+
+Lineage tests use fabricated conditional phrases and supplied review plans.
+They check exact parent-derivation preservation, current-plan binding, distinct
+intermediate/final hashes, inverse restoration, unchanged metadata, citation
+gaps, stale plans, and replay rejection. They do not validate semantic ownership
+or source truth. `projection_lineage.project_with_lineage` makes no I/O or model
+call and does not change the frozen projection engine. Real returned lineage
+and audit values are private; no actual E38 review or response is included.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

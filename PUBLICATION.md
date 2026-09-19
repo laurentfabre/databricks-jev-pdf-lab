@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twenty-one reusable Python modules and nineteen synthetic test modules.
+- Twenty-two reusable Python modules and twenty synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -48,6 +48,10 @@ no private Git history or original evidence directory is imported.
   copies. Only generic grammar code and fabricated fixtures are included.
   Real tables, candidates, source reviews, citation probes, experiment notebooks,
   outputs, and execution receipts remain private.
+- The projection-lineage wrapper and its 21 synthetic tests are unchanged
+  copies. It wraps the frozen field-projection engine without changing it.
+  Only generic code and fabricated fixtures are included; real conditional
+  selections, review records, source spans, audits, and derived outputs are not.
 
 ## Excluded
 
@@ -137,3 +141,11 @@ candidate; tests deliberately expose this limit. Unsupported inputs abstain,
 and no candidate never proves absence of conditional facts. The single known
 target comparison is post-hoc development review, not an independent holdout.
 Returned spans contain source text and must remain private for real inputs.
+
+The E38 lineage wrapper verifies identity and exact restoration, not semantic
+ownership, reviewer identity, or citation truth. It preserves the previous
+derivation beneath a new, explicitly non-service label. Inherited metadata is
+not new service confidence, and all acceptance flags remain false. Supplied
+conditional selections are post-hoc assistant judgments, not an automated
+selector. The two recovered relations do not establish generalization or full
+output acceptance. Real parent lineage and audit records must remain private.

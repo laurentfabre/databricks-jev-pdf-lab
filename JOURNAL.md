@@ -4,6 +4,36 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — conditional field projection and requested publication
+
+E38 recovered two reviewed conditional relations, applied to two parents each,
+without new inference or PDF reads. Only the two selected dietary arrays changed;
+all other response fields and service metadata remain exact. The 52 offerings,
+56 amounts, and seven-entry legend are preserved. Six visual relations/twelve
+applications remain missing, and the full output is still rejected.
+
+The frozen projection engine is unchanged. A new wrapper gives the derived
+result its current plan binding, preserves exact parent lineage, and separates
+intermediate and final audit hashes. Exact inverse restoration passes. Existing
+citations are reused without inventing service evidence or confidence. The
+selections and delta review are post-hoc assistant work, not independent labels.
+
+The kernel took 0.028739824 s, the experiment 2.838849153 s, and its enclosing
+job 32.489 s. Prior inference/preparation and unmeasured review are additional.
+These are repair costs, not savings. All 21 new synthetic tests passed locally
+and remotely; the remote suite also retained 38 frozen projection tests.
+
+At the user's request, publish only the unchanged generic wrapper, its fabricated
+tests, and aggregate findings, bringing the public suite to 352. Real documents,
+excerpts, selection/review records, maps, outputs, infrastructure, notebooks, and
+receipts remain private. TypeSafe's live citation guidance keeps exact coverage
+separate from contextual support. Initial sandbox documentation and credential
+checks failed; scoped read-only retries succeeded. No integration contract,
+frozen schema/instructions, Precision setting, account permission, or source-bearing
+authorization changes. Publication makes no new document experiment or hosted
+request. The proposed row-level follow-up is not registered or executed.
+Generalization and quality-equivalent end-to-end payoff remain unproven.
+
 ## 2026-09-19 — structural scope control and requested publication
 
 E37 accounted for all 356 retained tables across ten documents / 236 pages.

@@ -627,6 +627,47 @@ demonstrate incremental semantic value. No new Jev request was prepared or sent.
 Field repair, remaining visual evidence, full-output acceptance, unseen-layout
 generalization, and matched accepted-output economics remain open.
 
+## Condition-preserving projection and chained lineage (E38)
+
+E38 applies supplied, post-hoc assistant selections to the retained original-arm
+E36 shadow. Two parent items each receive two conditional dietary entries. Each
+entry keeps the shared conditional heading, exact preparation wording, and
+literal marker together; none asserts an unconditional parent property or
+allergen safety. Existing service citations cover the copied components, while
+source-image review supplies the ownership judgment. Span coverage alone does
+not prove that judgment.
+
+| Metric | Observed result |
+|---|---:|
+| Unique conditional relations recovered | 2 |
+| Parent applications written | 4 |
+| Visual relations / parent applications still missing | 6 / 12 |
+| Offerings / amounts / legend entries retained | 52 / 56 / 7 |
+| Other response fields and service metadata | Exactly unchanged |
+| New AI calls / PDF reads | 0 / 0 |
+| Projection-with-lineage kernel | 0.028739824 s |
+| Experiment, including tests and artifact I/O | 2.838849153 s |
+| Enclosing job / task duration | 32.489 s / 32.081 s |
+
+The small generic wrapper leaves the frozen E34 projection engine unchanged.
+Its inner audit remains bound to the intermediate response; its outer audit
+binds the final derived envelope. The current plan hash and exact parent
+derivation are retained, and inverse restoration returns the complete E36 base.
+No citation IDs or service confidence are invented. The result is explicitly
+not a service response and remains unaccepted.
+
+All 21 new synthetic tests and 59 remote tests (including 38 frozen projection
+tests) passed. Reported job setup/execution/cleanup were 6/25/1 seconds; the
+kernel ran on ARM64 with Python 3.12.3. Prior extraction and preparation, plus
+unmeasured selection and review, are additional. These are added repair costs,
+not measured savings or demonstrated avoided inference.
+
+Post-hoc delta review supports the four changed entries, not the full output.
+The compact arm is unchanged; six visual relations remain missing. This is
+inspected development data, not an independent holdout or a semantic Jev
+selection experiment. Complete source/schema acceptance, unseen-layout
+generalization, incremental Jev benefit, and matched economics remain open.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

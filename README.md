@@ -11,6 +11,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
 
 - Metadata-only Jev routing, compact shared-state requests, strict response
   validation, and a single-attempt transport that retains ambiguous outcomes.
+- Bounded concurrent request scheduling with durable round markers, no automatic
+  replay, and explicit question-to-page binding independent of response order.
 - Exact-output native TextPage reuse, page/region assembly, provenance checks,
   and scope-bound cache decisions.
 - A selective-parsing rehearsal preserving physical pages, native geometry,
@@ -46,6 +48,7 @@ request and requires separate credentials and data-boundary approval.
 |---|---|---|
 | Reuse native TextPages | 0.316798 s saved out of 2.647231 s; 0.803929 s out of 2.892520 s | Two alternative native-only workloads across 236 pages, not pipeline savings |
 | Compact Jev metadata requests | 32.48% fewer input tokens; $0.005799402 → $0.003915828 | 26/236 recommendations changed; not equivalent-policy evidence |
+| Four concurrent Jev requests | Median router wall time 15.674 → 4.366 s (72.14% lower), four paired trials | Same input-token cost; recommendation variability persists; not end-to-end savings |
 | Smaller extraction groups | Four room records recovered; class-name context recovered | Still missing dedicated class records; extraction 19.826 → 42.791 s |
 | Bounded Jev verifier | 3/5 error signals flagged; 0/3 false alarms | Four correlated, previously inspected cases; not calibrated acceptance |
 | Selective-parse rehearsal | 50 cases / 36 unique bundles; all 236 pages retained | Saved full-parser outputs; no new parsing or proved work avoided |
@@ -57,9 +60,9 @@ Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings cover E26–E30, including the E29 checker correction and negative
-real-document compaction result, as well as the earlier study.
-The offline suite contains 144 synthetic tests; it does not reproduce private
+Findings cover E26–E31, including the E29 checker correction, negative
+real-document compaction result, and bounded router scheduling improvement.
+The offline suite contains 162 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

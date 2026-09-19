@@ -122,3 +122,30 @@ synthetic tests. No PDFs, excerpts, outputs, raw requests, private infrastructur
 or execution receipts are included. Public visibility is not data-egress approval.
 TypeSafe guidance keeps literal coverage separate from semantic truth; Databricks
 guidance keeps persisted results and original execution handles authoritative.
+
+## 2026-09-19 — bounded router concurrency and publication
+
+E31 changed only scheduling of twelve unchanged metadata requests: serial
+versus four in flight, four balanced pairs, 96 registered requests total.
+Median router wall time fell from 15.674136342 s to 4.366265361 s (72.1435%).
+Every pair saved 11.135898–11.501311 s. Input tokens and published-rate input
+cost per pass were unchanged. The timer includes per-request persistence,
+but excludes preflight, round summary writes, tests, final analysis, and startup.
+
+Recommendation variability persists within and between arms; response-contract
+exceptions remain review-only. No source-bearing payload, parser, extractor,
+PDF read, retry, route acceptance, or complete-pipeline saving was involved.
+The fixed-rule no-Jev control remains unaccepted. This is router-stage progress,
+not incremental semantic Jev payoff or generalization to unseen layouts.
+
+Published the unchanged scheduler and 18 synthetic tests, bringing the public
+suite to 162. Question IDs bind pages independently of object/completion order.
+Interrupted rounds retain their handles and may not replay automatically.
+This remains a single-driver prototype, not distributed exactly-once execution.
+
+Rechecked retained E31 integrity/accounting without repeating hosted inference.
+Only aggregate results and reviewed code are included; source data, outputs,
+raw metadata packets, private receipts, infrastructure, and deployment settings
+remain excluded. TypeSafe guidance keeps code-owned validation and semantic
+acceptance separate. Public publication neither grants new source-bearing
+authorization nor completes the research objective.

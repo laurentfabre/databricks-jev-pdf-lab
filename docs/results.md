@@ -293,6 +293,59 @@ rollout on these results. Equal-quality end-to-end savings and incremental
 Jev payoff remain unproven; byte conservation is useful engineering evidence,
 not extraction-quality acceptance.
 
+## Bounded Jev concurrency (E31)
+
+The same twelve compact metadata-only requests cover all 236 pages per pass.
+Model `jev-1.13.0`, wire payloads, questions, transport, and strict response policy
+are unchanged. Only client scheduling changes: one versus four requests in flight.
+This is separate from evaluating many questions within each shared-state request.
+
+Four pairs used balanced arm order: serial/parallel, parallel/serial,
+parallel/serial, serial/parallel. Both arms in each pair used the same batch
+order, rotated by 0, 3, 6, or 9 positions. No warmup was discarded. There were
+96 registered requests and 1,979,808 metadata wire bytes, with no retries,
+source-bearing payloads, PDF reads, parser/extractor calls, or route acceptance.
+
+| Metric | Serial | Four concurrent |
+|---|---:|---:|
+| Median router wall time | 15.674136342 s | 4.366265361 s |
+| Range across four rounds | 15.389191–15.983365 s | 4.209667–4.482054 s |
+| Input tokens per pass | 93,234 | 93,234 |
+| Published-rate input cost per pass | $0.003915828 | $0.003915828 |
+| Response-contract exceptions per pass | 3–5 | 3–6 |
+
+**72.1435% lower median router wall time; 3.5898× ratio of medians.**
+All four pairs saved time: 11.135898–11.501311 s per pass. The timer includes
+scheduling, per-request validation, HTTP/TLS, and durable request/response/result
+writes. It excludes initial preflight, round summary writes, tests, final study
+analysis, and Jobs startup. Experiment time was 85.560078 s; enclosing job
+115.170 s, task 114.736 s (5 s reported setup / 109 s execution).
+Do not subtract these router-stage savings from a historical pipeline total.
+
+Identical prompts did not produce identical recommendations. Paired guarded
+candidate agreement was 221, 221, 222, and 223 of 236; raw service-choice
+agreement was 228–230/236. Within serial rounds, guarded agreement was
+219–223/236; within parallel rounds, 222–227/236. Variation cannot all be
+attributed to concurrency. Contract exceptions remain review-only; the known
+native-implementation veto remains. No semantic-equivalence claim follows.
+
+The no-Jev rule still recommends 194 native-layout / 42 managed pages with
+zero model calls. Its 0.000269272 s kernel excludes diagnostics and is not
+quality-accepted. Neither that timing nor E31 establishes safe work avoided.
+
+The new scheduler binds explicit question IDs to physical pages, never JSON
+object order or completion order (`route_10` can precede `route_2`). Durable
+round markers prohibit automatic replay of completed or interrupted work;
+on failure, it stops scheduling after observation and drains in-flight calls.
+All 18 new synthetic tests pass. Private integrity checks verified all 96
+ledgers, payload/response hashes, usage, bindings, and measured HTTP intervals.
+These checks establish accounting consistency, not source-level correctness.
+
+Decision: retain this measured router-overhead improvement. No input-token
+saving, attributable compute-cost saving, accepted end-to-end benefit, or
+incremental semantic Jev payoff has been established. Four paired trials on
+one workload do not demonstrate performance across other services or loads.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

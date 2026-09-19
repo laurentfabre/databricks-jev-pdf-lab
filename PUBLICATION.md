@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Fifteen reusable Python modules and thirteen synthetic test modules.
+- Sixteen reusable Python modules and fourteen synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -24,6 +24,9 @@ no private Git history or original evidence directory is imported.
 - `citation_span_review.py` includes the unchanged general interval and literal
   coverage functions, with their 18 synthetic tests. The experiment-specific E29
   review function and its unused import are omitted; private fixtures are not needed.
+- The bounded-concurrency module and its 18 synthetic tests are unchanged copies.
+  They include a historical benchmark-specific veto, not a general safety policy.
+  No real requests, private page mapping, deployment notebook, or raw ledger is included.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
@@ -63,6 +66,12 @@ Third-party work is linked and attributed, not vendored.
 - E30's one real-document pair is quality-rejected. Its compact input was smaller
   but slower in this observation and omitted a structured price. No causal latency
   distribution, matched-repeat benefit, full-corpus acceptance, or bill saving follows.
+- E31 improves measured router-stage wall time only. Input-token cost is unchanged,
+  recommendations vary even within an arm, and no output is quality-accepted.
+  The scheduler supports the registered limits of one or four concurrent requests
+  and at most twelve batches; it is not an adaptive production rate limiter.
+  Page mapping retains the historical doc-8/page-12 veto. Partial/unknown rounds
+  require investigation, not automatic replay in a fresh directory.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.

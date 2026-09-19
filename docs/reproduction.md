@@ -10,13 +10,14 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 299 included synthetic tests: 93 from the initial snapshot, 21
+There are 331 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
-audit tests, plus 38 reviewed-field-projection and 39 cited-field-composition tests.
-The private project recorded 513 passing synthetic tests, including evaluators
+audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
+and 32 table-scope-candidate tests.
+The private project recorded 545 passing synthetic tests, including evaluators
 not copied here. The public
-number must not be presented as 513.
+number must not be presented as 545.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -78,6 +79,14 @@ check whether a selected field is true, complete, or semantically supported.
 and returned audit must remain private when real inputs are used. The public
 suite does not reproduce E35 extraction or the private E36 source-level review.
 
+Table-scope tests use fabricated HTML only. They check exact character spans,
+paired columns, translation rows, boundaries, literal markers, unsupported
+markup, and explicit nonacceptance. Nonconditional and negated headings produce
+the same structural hypothesis, demonstrating why layout is not semantic proof.
+`table_scope_candidates.scan` has no I/O or model call; real returned spans are
+private source content. Tests do not reproduce the E37 corpus comparison or
+establish coverage on unseen layouts.
+
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install
 it separately; its commands run only these offline synthetic checks.
@@ -116,7 +125,8 @@ Before a new integration, check current primary documentation:
 - [TypeSafe documentation index](https://docs.typesafe.ai/llms.txt),
   [routing](https://docs.typesafe.ai/patterns/intent-routing), and
   [extraction cascades](https://docs.typesafe.ai/cookbooks/sde_cascade), plus
-  [citation checks](https://docs.typesafe.ai/cookbooks/citation_check).
+  [citation checks](https://docs.typesafe.ai/cookbooks/citation_check) and
+  [pre-parsed value selection](https://docs.typesafe.ai/cookbooks/pre_parsed_value_extraction_cookbook).
 - [Databricks ai_parse_document](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document)
   and [ai_extract](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_extract).
 

@@ -29,6 +29,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
   hash guards and existing citations; no automatic semantic discovery or acceptance.
 - Field-only composition of retained cited responses, preserving untouched fields,
   exact input text, citation namespaces, annotation origins, and inverse restoration.
+- Source-only table-scope candidates with exact spans and explicit abstention;
+  layout hypotheses remain separate from semantic ownership and acceptance.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -68,17 +70,18 @@ request and requires separate credentials and data-boundary approval.
 | Reviewed field projection | 49 supplied corrections across two shadows; about 17 ms execution per arm | Post-hoc assistant selections; 33.834 s enclosing job plus unmeasured review/preparation; neither full output accepted |
 | Targeted repair extraction | Enriched input recovers seven distinct legend entries; neither arm recovers conditional preparation properties | 36.356 s extraction for both inputs together, plus preparation/evaluation/review; both rejected |
 | Cited field-only composition | Seven-entry legend copied into two shadows; all other response fields unchanged | 16–22 ms kernels, 25.397 s enclosing job, plus prerequisite repair/review; no new inference or accepted savings |
+| Structural table-scope control | 356 tables accounted for; one candidate matches eight reviewed target links | 20 unsupported tables; 0.111 s scan kernel / 29.361 s job; no field repair, semantic acceptance, or savings |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings extend through E36, including the E29 checker correction, negative
+Findings extend through E37, including the E29 checker correction, negative
 real-document compaction result, bounded router scheduling improvement, and
 reviewed source-bound corrections and field-only composition. The broader audit
 found field and scope defects; the latest corrections do not resolve all of them
 or establish payoff.
-The offline suite contains 299 synthetic tests; it does not reproduce private
+The offline suite contains 331 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

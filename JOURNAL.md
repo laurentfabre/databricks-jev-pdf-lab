@@ -4,6 +4,33 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — structural scope control and requested publication
+
+E37 accounted for all 356 retained tables across ten documents / 236 pages.
+The source-only grammar scanned 336 tables and abstained on 20. Its single
+candidate matched eight previously reviewed target links, without recovering
+missing visual glyphs or changing any output. Reference comparison follows
+generation and is post-hoc development review, not an independent holdout.
+Existing citations cover the probed literal spans; this is feasibility evidence,
+not semantic acceptance or completed conditional-field repair.
+
+The scan kernel took 0.111351920 s; the complete experiment took 3.665403113 s
+inside a 29.361 s job. These are added diagnostic costs, not demonstrated savings.
+No inference or PDF read occurred. A Jev call merely agreeing with known layout
+links was not prepared: that would not establish incremental semantic benefit.
+
+At the user's request, publish the unchanged generic scanner and 32 fabricated
+tests, bringing the public suite to 331. Nonconditional and negated headings
+deliberately expose the scanner's semantic limits. Real tables, candidates,
+reviews, citation probes, notebooks, infrastructure, and receipts remain private.
+TypeSafe's live value-selection guidance reinforces the separation of candidate
+discovery, semantic choice, and exact code-side execution; no integration contract
+or model call changes. Databricks guidance preserves persisted evidence rather
+than repeating inference. Initial sandbox documentation DNS failed; scoped
+read-only access succeeded. Frozen schema/instructions and Precision v2.1 stay
+unchanged. All four prior source-bearing Jev requests remain consumed.
+Publication does not complete the separate optimization objective.
+
 ## 2026-09-19 — targeted repair and cited field composition
 
 E35 compared two scoped Precision inputs, one with additional post-hoc assistant

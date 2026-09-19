@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twenty reusable Python modules and eighteen synthetic test modules.
+- Twenty-one reusable Python modules and nineteen synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -44,6 +44,10 @@ no private Git history or original evidence directory is imported.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
+- The table-scope candidate module and its 32 synthetic tests are unchanged
+  copies. Only generic grammar code and fabricated fixtures are included.
+  Real tables, candidates, source reviews, citation probes, experiment notebooks,
+  outputs, and execution receipts remain private.
 
 ## Excluded
 
@@ -125,3 +129,11 @@ Third-party work is linked and attributed, not vendored.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.
+
+The E37 scope scanner supports a narrow rectangular HTML grammar with paired
+name/euro-price columns. It cannot interpret headings, negation, symbol meanings,
+or semantic ownership. Even nonconditional and negated headings can produce a
+candidate; tests deliberately expose this limit. Unsupported inputs abstain,
+and no candidate never proves absence of conditional facts. The single known
+target comparison is post-hoc development review, not an independent holdout.
+Returned spans contain source text and must remain private for real inputs.

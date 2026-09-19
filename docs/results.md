@@ -584,6 +584,49 @@ scope and other source/schema defects. This demonstrates reusable mechanical
 composition of supplied selections, not automatic correction, incremental Jev
 benefit, unseen-layout generalization, or equal-quality end-to-end savings.
 
+## Structural table-scope control (E37)
+
+E37 scans all retained table elements using source structure alone: paired
+name/euro-price columns, optional same-column translations, a full-width heading,
+and unpriced labelled rows. Exact source character spans are retained. Supplied
+review labels enter only after candidate generation, for comparison; the code
+does not consume source-group assignments or semantic review as scanner inputs.
+
+| Metric | Observed result |
+|---|---:|
+| Corpus coverage | 10 documents / 236 physical pages / 356 tables |
+| Tables scanned / unsupported | 336 / 20 |
+| Candidate blocks | 1 |
+| Reviewed target parent–preparation links matched | 8/8 |
+| Extra links on that target | 0 |
+| Literal marker cells retained | 2 |
+| Source spans covered by existing citations, per owner | 8/8 for each of two owners |
+| Responses modified / AI calls / PDF reads | 0 / 0 / 0 |
+
+Eighteen tables have ragged or unsupported widths; two contain multiple-table
+elements. These abstentions, and tables without candidates, are not certified
+free of conditional facts. The only candidate is the already-inspected target;
+its comparison is post-hoc development review, not independent accuracy evidence.
+No missing visual glyph is reconstructed. Existing citation coverage makes a
+bounded, reviewed derivation feasible but does not itself prove semantic support,
+repair a field, or authorize an unconditional property assignment.
+
+The 32 synthetic tests deliberately include nonconditional and negated headings
+that produce the same structural hypothesis. This exposes the boundary between
+layout and meaning. Every result remains semantically unresolved and unaccepted.
+Missing markers never establish dietary or allergen safety.
+
+The scan kernel took 0.111351920 s across all 356 tables; the experiment including
+tests, reads, and writes took 3.665403113 s. The enclosing job took 29.361 s
+(task 28.882 s; reported setup 5 s / execution 23 s). Prior parsing, extraction,
+and unmeasured review are additional. These are diagnostic costs, not savings.
+
+Decision: retain the deterministic scanner as a reusable candidate/control.
+Paying Jev merely to agree with eight already-known structural links would not
+demonstrate incremental semantic value. No new Jev request was prepared or sent.
+Field repair, remaining visual evidence, full-output acceptance, unseen-layout
+generalization, and matched accepted-output economics remain open.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

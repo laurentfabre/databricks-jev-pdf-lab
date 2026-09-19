@@ -4,6 +4,39 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — row-level repair and requested publication
+
+E39 narrowed three retained development inputs to one preparation row each,
+keeping both priced parents, translations, shared heading, legend, relevant
+observations, and explicit partial-source labels. Schema, instructions,
+Precision v2.1, and citations stayed frozen. Exactly three logical extraction
+inputs completed; saved-response evaluation made no further model calls.
+
+Two cases returned separate unpriced preparation records with two and three
+targeted markers. The third missed both markers and introduced unsupported
+price bases. None expresses the recovered markers as explicit parent-conditioned
+applications. Five of seven preparation-level relations appearing is therefore
+partial diagnostic progress, not completed parent-scoped repair. All three
+pass structural checks but remain unaccepted. No field was merged into the
+full-menu output; its prior defects remain. Review is post-hoc and non-independent.
+
+Extraction took 44.302 s for all three inputs together (43.223 s execution),
+without a result-cache hit or spill. Preparation took 14.393 s within a 38.935 s
+job; evaluation took 10.146 s within a 33.871 s job. These are added costs,
+with prior evidence preparation and unmeasured review additional. There is no
+matched timing baseline, attributable monetary saving, or incremental Jev result.
+
+Publish only the unchanged generic builder, 24 fabricated-input tests, and
+aggregate findings, bringing the public suite to 376. Private inputs, outputs,
+selection/review records, maps, infrastructure, and receipts stay excluded.
+The TypeSafe citation guidance keeps literal validity distinct from contextual
+support; Databricks guidance preserves saved results instead of repeating
+inference. Initial sandbox documentation DNS failed; scoped access succeeded.
+Publication changes no integration contract, account permissions, document data
+boundary, or remaining source-bearing authorization. No new experiment or
+hosted model request occurs. Full-field semantic review and acceptance,
+unseen-layout generalization, and end-to-end payoff remain open.
+
 ## 2026-09-19 — conditional field projection and requested publication
 
 E38 recovered two reviewed conditional relations, applied to two parents each,

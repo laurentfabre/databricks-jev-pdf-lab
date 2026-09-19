@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twenty-two reusable Python modules and twenty synthetic test modules.
+- Twenty-three reusable Python modules and twenty-one synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -52,6 +52,9 @@ no private Git history or original evidence directory is imported.
   copies. It wraps the frozen field-projection engine without changing it.
   Only generic code and fabricated fixtures are included; real conditional
   selections, review records, source spans, audits, and derived outputs are not.
+- The row-repair excerpt builder and its 24 synthetic tests are unchanged copies.
+  Only generic assembly code and fabricated fixtures are included; real excerpts,
+  selection plans, provenance maps, responses, notebooks, SQL, and receipts are not.
 
 ## Excluded
 
@@ -149,3 +152,13 @@ not new service confidence, and all acceptance flags remain false. Supplied
 conditional selections are post-hoc assistant judgments, not an automated
 selector. The two recovered relations do not establish generalization or full
 output acceptance. Real parent lineage and audit records must remain private.
+
+The E39 excerpt builder checks exact copying, supplied bindings, a narrow HTML
+grammar, and segment accounting. It does not authenticate the supplied review,
+prove correct ownership, discover which rows to select, or validate that all
+necessary context is present. It expects two-parent development cases with a
+separate legend page; it is not a general document slicer. Outputs explicitly
+remain partial and unaccepted, and omitted material stays required. Real output
+strings, plans, and origin maps contain private content. Five observed marker
+relations in separate preparation records are not five completed parent-scoped
+repairs. The latest full-menu output is unchanged and rejected.

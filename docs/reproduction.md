@@ -10,14 +10,15 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 352 included synthetic tests: 93 from the initial snapshot, 21
+There are 376 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
 audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
-and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests.
-The private project recorded 566 passing synthetic tests, including evaluators
+and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests
+and 24 row-repair-excerpt tests.
+The private project recorded 590 passing synthetic tests, including evaluators
 not copied here. The public
-number must not be presented as 566.
+number must not be presented as 590.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -94,6 +95,15 @@ gaps, stale plans, and replay rejection. They do not validate semantic ownership
 or source truth. `projection_lineage.project_with_lineage` makes no I/O or model
 call and does not change the frozen projection engine. Real returned lineage
 and audit values are private; no actual E38 review or response is included.
+
+Row-repair tests use fabricated multilingual tables, annotations, origin maps,
+and supplied selections. They check exact copied spans, Unicode lengths, hash
+bindings, retained parent context, explicit omitted-row accounting, non-independent
+review labels, and rejection of stale, ambiguous, or unsupported inputs.
+`row_repair_inputs.build_cases` makes no I/O or model call. It does not prove
+selection quality, correct parent ownership, sufficient context, or semantic
+extraction accuracy. Its real output text and audits must stay private; the
+public suite cannot reproduce the E39 source-specific extraction or review.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

@@ -668,6 +668,67 @@ inspected development data, not an independent holdout or a semantic Jev
 selection experiment. Complete source/schema acceptance, unseen-layout
 generalization, incremental Jev benefit, and matched economics remain open.
 
+## One preparation row per repair input (E39)
+
+E39 tests finer input granularity using three previously inspected development
+rows. Each input retains both priced parents, their translations, the shared
+conditional heading, cross-page legend and policy context, the selected row's
+provisional observation, and explicitly labelled retained assistant review.
+Copied source intervals and origins remain exact. Omitted choices are labelled
+as omitted, not absent; all full-document obligations remain in force.
+Schema, instructions, Precision v2.1, and citations are unchanged.
+
+| Scoped case | Target preparation-marker relations appearing | Remaining defect |
+|---|---:|---|
+| A | 2/2, in a separate unpriced preparation record | No explicit link to the two parent offerings |
+| B | 3/3, in a separate unpriced preparation record | No explicit link to the two parent offerings |
+| C | 0/2 | Markers missing; two unsupported price-basis defaults |
+
+All three preserve the two priced parent identities and amounts, physical-page
+fields, and seven legend entries. Structural checks pass with zero invalid
+citation fields; that is not semantic acceptance. An unpriced preparation
+record is permitted by the schema and is not an invented priced offering.
+The defect is the missing explicit parent association. Case A cites retained
+provisional observations and reviewed legend entries, despite no overlap with
+the assistant preparation review. Case B also cites the retained assistant
+preparation review, but cited context is not an explicit relationship in the
+output fields. Review remains post-hoc, non-independent, and incomplete for
+full-field acceptance. Empty allergen arrays establish no safety property.
+
+Five of seven targeted preparation-level relations appear across A/B, including
+four visual relations missing from E38. They have **not** been applied to the
+full-menu output. The third case still misses two visual relations. E38 remains
+unchanged, with six visual relations/twelve parent applications missing. No
+automatic merge or acceptance claim is made; citation origins remain distinct
+from proof of source truth.
+
+| Measurement boundary | Observed duration or size |
+|---|---:|
+| Three inputs, total UTF-8 bytes | 14,582 |
+| Copied bytes including repetition / unique copied bytes | 13,367 / 6,087 |
+| Excerpt assembly kernel | 0.002410 s |
+| Preparation, including Delta write/verify | 14.392685 s |
+| Preparation enclosing job | 38.935 s |
+| Three-input extraction statement / execution | 44.302 s / 43.223 s |
+| Saved-response evaluation | 10.145503 s |
+| Evaluation enclosing job | 33.871 s |
+
+Exactly three logical extraction inputs ran once in one statement, with no
+result-cache hit or spill. The extraction duration is not per-input timing.
+Preparation/evaluation durations are nested inside their respective jobs;
+do not add each inner duration to its enclosing duration. Prerequisite evidence,
+input verification, artifact transfer, and unmeasured review add further cost.
+The earlier E35 trial used a different input shape and is only a historical
+diagnostic comparator, not a matched timing baseline. No token/billing allocation
+or quality-equivalent saving is established.
+
+The 24 new synthetic tests cover exact excerpts and origin accounting, not
+semantic selection. Decision: retain finer granularity as a bounded candidate,
+but do not promote these partial outputs or blindly retry the failing case.
+Any future derived composition must explicitly preserve parent-conditioned
+meaning and honest evidence origins. No new Jev call was made; no incremental
+semantic Jev benefit, independent generalization, or end-to-end payoff follows.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

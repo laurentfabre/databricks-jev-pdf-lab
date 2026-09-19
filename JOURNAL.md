@@ -206,3 +206,34 @@ contextual support. Databricks guidance favors persisted results over duplicate
 inference. Publication makes no new source-bearing request or document experiment.
 The proposed follow-on recovery experiment has not been registered or run;
 full-corpus acceptance, independent holdouts, and matched economics remain open.
+
+## 2026-09-19 — reviewed field projection and publication
+
+E34 applied 49 supplied, post-hoc assistant selections across two separate
+shadow outputs: six positive source selections and 43 reviewed basis-to-null
+assignments. Exact copying, source/page/schema bindings, unchanged metadata,
+and inverse restoration passed. Both shadows match the partial reference's
+52 offerings, 56 amounts, 49 marker associations, and 52 physical-page records.
+These counts do not establish full correctness; legend, preparation scope,
+parser artifacts, allergens, field placement, and complete citations remain open.
+
+The engine performs no semantic discovery or model call. Null selections rely
+on explicit review, not literal mismatch alone. All acceptance flags stay false.
+Projection kernels took about 17 ms per arm; plan compilation 37–93 ms; the
+experiment 4.010 s and enclosing job 33.834 s. Manual selection/review/preparation
+time is unmeasured. These are added costs, not demonstrated savings.
+
+Initial synthetic tests exposed shared-path mutation in the fixture builder,
+causing 14 cascading errors. Deep-copying each operation path fixed the fixture
+before execution; all 38 new tests then passed locally and remotely. No frozen
+historical input or result was changed and no inference was repeated.
+
+Published the unchanged generic engine and its 38 fabricated-input tests,
+bringing the public suite to 260. Real selection plans, source scopes, review
+records, document data, outputs, notebooks, and execution receipts stay private.
+TypeSafe's value-selection guidance keeps candidate selection separate from
+exact code execution; this experiment tests only the reviewed deterministic
+control, not hosted semantic selection. Databricks guidance keeps retained
+results reusable without duplicate inference. Publication performs no new
+document experiment or source-bearing request and grants no additional token
+permissions. Equal-quality end-to-end payoff remains unproven.

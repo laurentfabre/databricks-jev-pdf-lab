@@ -455,6 +455,59 @@ Separate source/parser defects, exact field assembly, semantic scope decisions,
 and full-output acceptance. The reusable audit improves visibility into failures;
 it does not prove a Jev advantage, generalization, or end-to-end cost reduction.
 
+## Reviewed source-selection projection (E34)
+
+E34 separates reviewed selection from exact execution. A generic pure-code
+engine applies supplied post-hoc assistant selections to two retained inputs:
+E30's original response and E32's compact shadow. It checks source, response,
+scope, schema, and review hashes; validates expected-before values and
+nonoverlapping schema paths; copies exact source spans covered by existing
+same-arm citations; and emits a separate shadow with reversible edits.
+It neither discovers the corrections nor makes a Jev call.
+
+| Metric | Original-derived shadow | Compact-derived shadow |
+|---|---:|---:|
+| Supplied reviewed operations | 3 | 46 |
+| Positive source selections | 3 | 3 |
+| Explicit reviewed basis-to-null selections | 0 | 43 |
+| Partial-reference amounts | 56/56 | 56/56 |
+| Partial-reference marker associations | 49/49 | 49/49 |
+| Offerings / correct physical-page records | 52/52 | 52/52 |
+| Concrete schema field/container slots | 837 | 842 |
+| Plan compilation | 0.037458501 s | 0.093455517 s |
+| Projection kernel, including reversal | 0.016820334 s | 0.016860179 s |
+
+The six positive operations restore a dedicated dietary property and a lost
+multilingual qualifier in each arm, add an omitted policy in the original arm,
+and repair one compact-only transcription error. The 43 null selections remove
+specifically reviewed unsupported basis defaults. They do not establish that
+no other basis exists: absence of an exact literal is not semantic proof.
+Other source-stated bases are outside that null selection. Original outputs,
+metadata, amounts, currencies, page fields, and untouched fields are preserved.
+No service-generated citation or confidence score is invented for a new value.
+
+Assistant review inspected the six positive operations, all 43 null entries,
+and seven retained source-page renders. This is post-hoc development review,
+not independent labeling, automated selection accuracy, or unseen-layout
+generalization. Perfect partial-reference counts do not mean complete quality:
+legend distinctions, preparation-specific scope, parser-origin names, symbol
+multiplicity, allergen evidence, field placement, and complete multilingual
+and semantic citation acceptance remain unresolved. Neither output is accepted.
+
+All 38 new synthetic tests passed locally and remotely. An initial fixture
+isolation bug caused 14 cascading test errors; copying each operation path
+fixed that before submission. No real-data inference was involved in that fix.
+The experiment including tests, reads, and writes took 4.009673867 s; the
+enclosing job took 33.834 s (task 33.401 s; reported setup 5 s / execution 28 s).
+Manual selection, review, and preparation time remain unmeasured. These are
+additional costs, not savings against the historical 112–117-second extraction.
+No extraction was repeated or demonstrated necessary to repeat.
+
+Decision: retain the hash-bound, reversible execution engine as a reusable
+control. Semantic selection and complete source acceptance remain separate
+problems. Incremental Jev benefit and equal-quality cost/latency payoff remain
+unproven. No additional hosted source-bearing authorization is implied.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

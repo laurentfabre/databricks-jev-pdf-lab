@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Eighteen reusable Python modules and sixteen synthetic test modules.
+- Nineteen reusable Python modules and seventeen synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -33,6 +33,9 @@ no private Git history or original evidence directory is imported.
 - The schema-field audit module and its 23 synthetic tests are unchanged copies.
   Only generic code and fabricated fixtures are included; real field inventories,
   source scopes, manual-review records, outputs, and deployment files are excluded.
+- The reviewed-field projection module and its 38 synthetic tests are unchanged
+  copies. Only the generic execution engine and fabricated fixtures are included;
+  real selection plans, source mappings, review evidence, and shadows are excluded.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
@@ -92,6 +95,17 @@ Third-party work is linked and attributed, not vendored.
   data boundary when real inputs are used. Empty allergen arrays prove no safety
   property. All semantic statuses remain unevaluated and acceptance stays false.
   The separate assistant source review is post-hoc, not independent labeling.
+- E34 executes supplied post-hoc assistant selections; it does not discover or
+  semantically validate corrections. Review hashes bind supplied records, not
+  their truth or reviewer identity. The engine accepts the benchmark's schema
+  shape and span-cited Precision responses, not arbitrary schemas or image-only
+  evidence. Existing citation coverage proves literal presence, not correct scope.
+  Explicit null selections are reviewed absence judgments, not a general rule
+  that missing literals imply unstated facts. Original metadata is preserved;
+  it must not be represented as new service-generated confidence for the edits.
+  Real plans and audits contain source/output values and must remain private.
+  All shadows remain unaccepted; selection, review, and preparation costs are
+  outside the measured projection kernels.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.

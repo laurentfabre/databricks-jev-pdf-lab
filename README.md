@@ -25,6 +25,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
   preserving exact literals, existing fields, and inherited citation IDs.
 - Schema-wide field inventory that distinguishes missing, null, empty, and
   populated fields, with literal citation diagnostics but no semantic acceptance.
+- Reversible execution of supplied, reviewed field selections with source/schema
+  hash guards and existing citations; no automatic semantic discovery or acceptance.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -61,16 +63,17 @@ request and requires separate credentials and data-boundary approval.
 | Full-evidence menu compaction | 4.91% fewer input bytes; 112.352 → 117.254 s | One structured supplement price omitted; neither arm accepted |
 | Source-bound price recovery | One shadow addition; compact amount coverage 55/56 → 56/56; no new inference | About 13 ms recovery kernel, 46.124 s enclosing job; incomplete quality review, no demonstrated savings |
 | Schema-wide quality audit | All 33 schema paths inventoried; 43 unsupported basis defaults remain in compact and shadow outputs | Additional diagnostic work, not repair, semantic acceptance, or savings |
+| Reviewed field projection | 49 supplied corrections across two shadows; about 17 ms execution per arm | Post-hoc assistant selections; 33.834 s enclosing job plus unmeasured review/preparation; neither full output accepted |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings extend through E33, including the E29 checker correction, negative
+Findings extend through E34, including the E29 checker correction, negative
 real-document compaction result, bounded router scheduling improvement, and
-one reviewed source-bound recovery. The broader audit found unresolved field
-and scope defects; recovering one price did not make either output acceptable.
-The offline suite contains 222 synthetic tests; it does not reproduce private
+reviewed source-bound corrections. The broader audit found field and scope
+defects; the latest corrections do not resolve all of them or establish payoff.
+The offline suite contains 260 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

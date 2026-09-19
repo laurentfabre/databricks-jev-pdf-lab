@@ -10,12 +10,12 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 222 included synthetic tests: 93 from the initial snapshot, 21
+There are 260 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
-audit tests. The private project recorded 412
+audit tests, plus 38 reviewed-field-projection tests. The private project recorded 450
 passing synthetic tests, including evaluators not copied here. The public
-number must not be presented as 412.
+number must not be presented as 450.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -58,6 +58,15 @@ fidelity, and literal misses may reflect bilingual formatting rather than error.
 `schema_field_audit.audit` performs no I/O, but its returned inventory copies
 field values; do not publish real-data inventories. The public tests do not
 reproduce the private E33 manual source review or its historical measurements.
+
+Projection tests use fabricated review plans, source spans, and responses. They
+cover stale input/schema/scope bindings, exact field copying, source-page guards,
+citation gaps, overlapping operations, explicit reviewed nulls, immutable raw
+outputs/metadata, replay rejection, and exact reversal. They do not validate
+the supplied semantic selections. The review digest is an integrity binding,
+not authentication or proof of truth. `reviewed_field_projection.project` has
+no I/O or model call; real plans and returned audits still contain private data.
+No real E34 selection plan or source review is included in this repository.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

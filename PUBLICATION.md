@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twenty-four reusable Python modules and twenty-two synthetic test modules.
+- Twenty-six reusable Python modules and twenty-four synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -58,6 +58,12 @@ no private Git history or original evidence directory is imported.
 - The conditional-donor composer and its 37 synthetic tests are unchanged copies.
   Only generic execution code and fabricated fixtures are included; real donors,
   source scopes, selections, review records, composites, audits, and outputs are not.
+- The span-recipe compiler and its 20 synthetic tests are unchanged copies.
+  Only generic code and fabricated Unicode strings are included; real recipes,
+  excerpts, SQL deployment files, origins, and execution receipts remain private.
+- The symbol-to-legend bridge and its 37 synthetic tests are unchanged copies.
+  Only generic code and fabricated fixtures are included; real semantic mappings,
+  reviews, donor views, composition plans, audits, and outputs remain private.
 
 ## Excluded
 
@@ -178,3 +184,20 @@ assistant-reviewed origins stay distinct. Inherited metadata is not confidence
 in derived edits. Real plans, audits and composite text remain private. Four
 reviewed relations do not establish whole-output acceptance, unseen-layout
 generalization, avoided extraction, or incremental Jev benefit.
+
+The E41 span-recipe compiler checks exact character coverage, bounds and registered
+repetitions. It does not choose placement, judge relevant context, execute SQL,
+or prove semantic equivalence. Its public tests emulate string operations in
+SQLite with fabricated text, not Databricks inference. Real origin mappings and
+recipes are private. The raw development extraction remains quality-rejected.
+
+The E42 bridge requires supplied post-hoc symbol/legend mappings and page-bound
+assistant observations. It adds references to existing citations in a labelled
+derived donor view; scalar values, original metadata, and citation spans remain
+unchanged. Hashes bind records, not reviewer identity or semantic truth. A test
+deliberately demonstrates that a dubious supplied mapping can pass structural
+checks while remaining unaccepted. Only a symbol count of one is supported;
+repeated symbols are rejected, not interpreted as a degree or tier. The unchanged
+E40 composer is used downstream. Both inverses preserve the raw donor and base.
+Closing the inspected conditional inventory does not accept the full output,
+demonstrate an independent holdout, or prove avoided inference or savings.

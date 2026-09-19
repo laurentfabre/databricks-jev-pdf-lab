@@ -779,6 +779,89 @@ of existing evidence to repair fields, not that another extraction was needed
 or avoided. No accepted-output cost reduction, incremental semantic Jev benefit,
 or generalizable end-to-end payoff is established.
 
+## Move evidence adjacent to its table using SQL (E41)
+
+E41 changes placement, not extraction granularity: retained provisional and
+assistant-reviewed observations move beside the selected table. The span recipe
+preserves every original character, repeating only 256 caveat characters and
+one newline. The resulting input is 4,796 characters / 5,215 UTF-8 bytes.
+Preparation is materialized directly in SQL; no preparation Job is submitted.
+The schema, instructions, Precision v2.1, and citations remain unchanged.
+
+One logical extraction returned two priced parents and one unpriced preparation,
+with both previously missing preparation markers and seven legend groups.
+There are still **zero explicit parent-conditioned applications**, two unsupported
+price bases, and inherited transcription defects. The raw output is rejected.
+The 29 citations cover the retained preparation observations; the marker citations
+contain symbol keys rather than literal readable labels. That mismatch is not
+itself proof of semantic error, but the unchanged E40 literal gate rejects this
+raw donor. Semantic linkage needs an explicit, separately reviewed bridge.
+
+| Measurement boundary | Observed duration |
+|---|---:|
+| Preflight statement, including cold provisioning | 9.094 s |
+| SQL preparation statement | 4.264 s |
+| Input guard/export statement | 1.365 s |
+| Extraction statement / execution | 16.735 s / 15.704 s |
+| Output export statement | 2.199 s |
+| Sum of five statement durations | 33.657 s |
+| First submission through final export observation | 166.558361 s |
+| Sum of twelve client-command durations | 4.084596 s |
+
+The observation envelope includes orchestration and inspection gaps. Client
+durations may overlap server work and must not be added blindly; the statement
+sum is not complete latency or dollar cost. Prior inference/preparation and
+unmeasured review remain additional. There was no result-cache hit or spill.
+The earlier row-isolation experiment is a historical diagnostic, not a matched
+control. Twenty new synthetic tests check recipe accounting, not source truth.
+No Jev request or PDF reread occurred, and no saving is established.
+
+## Bind symbol keys to existing legend evidence before composition (E42)
+
+E42 reuses the E41 donor and E40 base without new inference. A supplied post-hoc
+assistant review maps two cited symbol keys to separately cited legend meanings.
+The bridge requires page-bound reviewed observations, full observation coverage,
+and the original marker's citation to the symbol key/count. It adds only references
+to existing legend citations in an explicitly labelled derived donor view.
+No scalar value, raw donor, or service citation span is changed.
+
+The unchanged E40 composer then adds the two reviewed relations to both parent
+offerings, preserving exact conditional wording. No donor prices, bases, names,
+policies, or separate preparation item are imported. The six prior conditional
+entries per parent remain exact. Both raw-donor and base inverse checks pass.
+
+| Bounded outcome or measurement | Observed result |
+|---|---:|
+| Newly represented relations / parent applications | 2 / 4 |
+| Known conditional inventory represented | 8/8 relations; 16/16 applications |
+| Retained items / amounts / legend entries | 52 / 56 / 7 |
+| Existing donor spans rebased without widening | 9 |
+| Bridge kernel | 0.003343 s |
+| Composition kernel | 0.022093 s |
+| Saved-result fetch | 9.489064 s |
+| Complete experiment | 12.524108 s |
+| Enclosing job / task | 37.211 s / 36.712 s |
+| Reported setup / execution | 5 s / 31 s |
+
+All 37 new synthetic tests and 113 remote synthetic tests passed. Runtime was
+ARM64 / Python 3.12.3. Bounded post-hoc assistant review supports the four appended
+entries, not the semantic correctness of every field. All unrelated fields,
+base citations, original metadata, and parent lineage stay exact. Derived citation
+references are not new service evidence or confidence. Supplied semantic mappings
+are not automatically discovered or independently authenticated by their hashes.
+
+The known conditional inventory is now closed, **not the whole menu or corpus**.
+Proper-name transcription, parser glyph artifacts, repeated-symbol fidelity,
+complete field/citation review, the other nine documents, independent holdouts,
+and matched economics remain open. The full output remains rejected. Stop this
+single-row isolation/placement/marker-repair family and address broader gaps.
+
+Nested kernel, fetch, experiment, task and job durations are not additive.
+E41 and prior inference, preparation, evaluation, transfers, and unmeasured review
+remain additional. E42 adds diagnostic cost; it does not demonstrate that another
+extraction was needed or avoided. This remains a deterministic no-Jev control,
+not incremental semantic Jev benefit, generalization, or accepted-output savings.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

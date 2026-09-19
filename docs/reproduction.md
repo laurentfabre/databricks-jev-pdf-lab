@@ -10,15 +10,16 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 413 included synthetic tests: 93 from the initial snapshot, 21
+There are 470 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
 audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
 and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests
-and 24 row-repair-excerpt tests, plus 37 conditional-donor-composition tests.
-The private project recorded 627 passing synthetic tests, including evaluators
+and 24 row-repair-excerpt tests, plus 37 conditional-donor-composition tests,
+20 span-recipe tests, and 37 symbol-to-legend-bridge tests.
+The private project recorded 684 passing synthetic tests, including evaluators
 not copied here. The public
-number must not be presented as 627.
+number must not be presented as 684.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -114,6 +115,23 @@ can pass structural checks: these tests explicitly do not prove the supplied
 semantics. `conditional_donor_composition.compose` performs no I/O or model call.
 Real donor text, plans, audits and derived outputs stay private. The tests do
 not reproduce the private E40 bounded source review or historical timing.
+
+Span-recipe tests use fabricated Unicode strings and a SQLite string-operation
+emulator. They cover exact copying, explicit repeated ranges, character/byte
+lengths, stale hashes, invalid bounds, gaps and unregistered repetition, and
+restricted SQL column identifiers. `span_reorder.sql_expression` compiles an
+expression but performs no I/O or SQL execution. Preservation does not establish
+semantic equivalence or optimal placement. No real E41 recipe is included.
+
+Legend-bridge tests use fabricated observations, symbols, legends and selections.
+They cover complete cited observations, symbol-key/count coverage, page and hash
+bindings, existing-citation-only additions, immutable scalar values and metadata,
+unsupported repeated symbols, stale plans, replay rejection, exact inverse, and
+integration with the unchanged conditional composer. A deliberately dubious
+mapping can pass structural checks while remaining unaccepted: supplied semantic
+judgments are not validated by this code. `legend_bound_donor.build_view` makes
+no I/O or model call. Real views, plans, origins and audits are private. These
+tests do not reproduce the E42 source review, historical latency, or savings.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

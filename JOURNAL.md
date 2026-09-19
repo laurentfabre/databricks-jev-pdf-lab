@@ -4,6 +4,42 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — adjacent evidence, reviewed legend bridge, and publication
+
+E41 moved retained observations next to their table through SQL-native span
+assembly. Every original character is preserved, with 256 repeated caveat
+characters and one newline. One new extraction recovered both previously
+missing preparation markers, but in a separate unpriced record: no explicit
+parent applications. Two unsupported price bases and inherited transcription
+defects keep the raw output rejected. Its citations use symbol keys rather
+than readable labels; a literal mismatch alone is not a semantic error.
+
+E42 explicitly binds those keys to separately cited, reviewed legend meanings,
+then uses the unchanged E40 composer. Only a labelled derived donor view gains
+references to existing citations. Both inverses pass; no raw values, source
+spans, or unrelated fields change. Two more relations / four parent applications
+close the known conditional inventory at 8/8 and 16/16. Bounded post-hoc assistant
+review supports the additions, not complete output quality or generalization.
+The whole-menu output remains rejected and the ten-document scope unchanged.
+
+E41 extraction took 16.735 s; five statements sum to 33.657 s, while first
+submission through final export observation took 166.558361 s including
+orchestration and inspection gaps. E42 bridge/composition took 0.003343/0.022093 s
+inside a 12.524108 s experiment and 37.211 s job. Prerequisite inference,
+preparation, transfers and unmeasured review remain additional. Neither result
+is an end-to-end saving. Stop this single-row repair family and focus future
+research on wider quality gaps, holdouts and attributable accepted-output cost.
+
+At the user's request, publish generic code, 57 new fabricated-input tests,
+and aggregate findings, bringing the public suite to 470. Real inputs, outputs,
+reviews, recipes, maps, infrastructure and receipts stay private. TypeSafe
+guidance keeps deterministic execution separate from semantic judgment, and
+Databricks guidance preserves retained inference. Initial sandbox documentation
+and credential checks failed; scoped read-only checks succeeded without changing
+authentication. Publication changes no integration contract or authorization,
+and performs no document processing or new model call. Accepted-output savings,
+independent generalization, and incremental semantic Jev benefit remain unproven.
+
 ## 2026-09-19 — conditional donor composition and requested publication
 
 E40 applied four supplied visual relations from retained E39 donors to two

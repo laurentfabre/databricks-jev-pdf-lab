@@ -60,3 +60,35 @@ source-text request is authorized by this publication.
 Next: independently justify safe-to-skip pages, validate selected-parser page
 mapping, evaluate complete downstream quality on unseen layouts, and measure
 matched end-to-end economics. The research objective remains unfinished.
+
+## 2026-09-19 — later evidence and publication update
+
+E26 retained requested original page identities across five selected pages
+and reassembled all 30 physical pages. A frozen reference error was recorded
+separately, and a missing visual detail prevents quality acceptance. Most of
+the observed 407.769-second statement duration was warehouse queue time,
+not an isolated parser measurement.
+
+E27 corrected HTML-sensitive lexical diagnostics on matched eligible pages.
+Three projection failures remain unknown. Lower diagnostic counts are not
+better extraction or permission to skip managed parsing.
+
+E28 restored all ten saved parser envelopes exactly. Complete serialized
+bytes fell 3.7440%, versus 13.8741% for content characters. Published the
+unchanged deterministic codec and its 21 synthetic tests, not document data.
+The public offline suite now has 114 tests. No inference economics or
+incremental Jev benefit follows from reversible serialization.
+
+E29's four fully synthetic Precision inputs completed. All return expected
+names and citation kinds, but none passes the full narrow automated gate.
+Published only preliminary aggregates with explicit unreviewed-failure
+caveats; no semantic acceptance or compaction advantage is claimed. The
+retained results need diagnosis before further inference.
+
+Rechecked retained evidence consistency without rerunning experiments. The
+public snapshot remains allowlisted; original inputs, raw responses, private
+receipts, and infrastructure identifiers remain excluded. TypeSafe guidance
+continues to keep typed outputs and confidence separate from truth. The
+Databricks guidance supports reusing persisted outputs, not duplicate calls.
+No new hosted source-bearing request, deployment, or AI experiment was made
+for this update. The broader optimization objective remains unfinished.

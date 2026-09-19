@@ -128,6 +128,99 @@ Timing: 8.517998 s saved-parser fetch, 8.634450 s assembly/comparison/writes,
 19.381964 s total experiment, 39.741 s enclosing job (5 s reported setup,
 34 s reported execution). These are rehearsal overheads, not savings.
 
+## Selected-page parser probe (E26)
+
+Three original-document inputs requested five selected pages; all requested
+original page IDs and bbox page assignments were retained. Reassembly preserved
+all 30 physical pages across those documents. Only two of five selected-page
+evidence projections exactly matched the saved full-parser output.
+
+The frozen marker check scored 40/41. Subsequent source review found the failed
+reference label was wrong, not the parsed value; the correction is recorded
+separately without changing the historical score. Review also found a visual
+detail omitted from a generated description. None of the bundles is accepted
+for complete downstream extraction quality.
+
+Statement time was 407.769 s: 384.845 s from queue start to compilation,
+2.457 s compilation, and 20.340 s execution. Shared-warehouse contention
+dominates that observation; it is neither isolated parser latency nor speedup
+evidence. Evaluation added 10.380658 s within a 47.745 s job. No matched
+baseline or safe-to-skip policy was established.
+
+## Corrected lexical diagnostics (E27)
+
+Removing HTML wrappers from a separate diagnostic reduced discrepancy counts
+on the same eligible pages. No extraction output was changed.
+
+| Arm | Eligible native pages | Raw → visible word-token discrepancies |
+|---|---:|---:|
+| Fixed rule | 190 | 19,488 → 1,972 |
+| Document Jev | 213 | 19,678 → 2,162 |
+| Page Jev | 193 | 19,387 → 1,913 |
+| Compact Jev | 193 | 19,308 → 1,942 |
+
+Three unsupported projections remain unknown, not zero-discrepancy successes.
+These are measurement corrections, not accuracy improvements, missing-fact
+counts, or evidence that native pages are safe. The saved-artifact experiment
+took 4.259082 s; its enclosing job took 35.122 s. No PDF or AI calls occurred.
+
+## Reversible table serialization (E28)
+
+Across ten documents / 236 pages, all parser envelopes restored exactly.
+Of 356 table elements, 241 became smaller and 115 stayed original because
+compaction was not smaller. None was unsupported in this corpus. Unsupported
+structures fall back to unchanged content in the reusable codec.
+
+| Measurement | Original | Candidate | Reduction |
+|---|---:|---:|---:|
+| Content characters | 293,381 | 252,677 | 13.8741% |
+| Complete compact-JSON envelope bytes | 680,282 | 654,812 | 3.7440% |
+
+JSON escaping and unchanged metadata substantially reduce the apparent gain.
+Codec work took 0.181395 s, the experiment 4.383047 s, and its job 26.110 s.
+All 21 remote codec tests passed. The same unchanged module and synthetic tests
+are included in this repository.
+
+This preserves an imperfect parser output, not source truth. There is no
+measured serving-token, invoice, model-latency, or incremental Jev benefit.
+The deterministic transform is equally available to the no-Jev control.
+Byte reduction alone does not justify a full-corpus inference trial.
+
+## Synthetic compact-input probe (E29; preliminary)
+
+Four synthetic inputs compared HTML/compact representations and STRING/VARIANT
+input types, using the frozen full schema, Precision v2.1, and citations.
+Each contained the same ten offerings on three synthetic pages. These were
+four logical extraction inputs in two concurrent, two-row SQL statements,
+run in the approved Databricks workspace. No PDF, real source data, parser,
+or Jev request was involved.
+
+All four returned the exact ten-name inventory, no service error, and the
+expected citation kind. The frozen narrow checker produced:
+
+| Input | Citation kind / count | Items passing all narrow checks |
+|---|---|---:|
+| STRING compact | span / 10 | 7/10 |
+| STRING HTML | span / 10 | 2/10 |
+| VARIANT compact | bbox / 4 | 0/10 |
+| VARIANT HTML | bbox / 4 | 0/10 |
+
+**No case passes the whole narrow gate. These are not adjudicated accuracy
+scores.** Both original controls also fail, so the counts do not establish
+that compaction caused failures or improved quality. Model behavior,
+representation differences, and checker limitations still need separate
+review. Policies, legends, price basis, and details are not fully checked;
+citation overlap alone does not prove evidence supports a claim.
+
+The VARIANT statement took 31.327 s total and the STRING statement 31.408 s.
+Each mixes original and compact inputs; these are not original-versus-compact
+latency measurements. The saved-output evaluation took 10.619316 s including
+9.210875 s fetch, within a 35.549 s job (5 s reported setup, 29 s execution).
+All 12 remote evaluator tests passed. Artifact/hash checks confirm consistency,
+not semantic correctness. No inference was repeated for
+this publication. The next gate is review of the retained failures, not a new
+full-corpus run or deployment of the compact representation.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

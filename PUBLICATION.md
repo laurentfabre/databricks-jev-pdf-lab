@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twelve reusable Python modules and ten synthetic test modules.
+- Thirteen reusable Python modules and eleven synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -17,6 +17,8 @@ no private Git history or original evidence directory is imported.
   provisioning helper. The included transport tests use dummy values and stubs.
 - Public documentation is newly written from aggregate observations. It does not
   contain the private journal, original notebook configuration, or source data.
+- The table-compaction module and its 21 synthetic tests are unchanged copies of
+  the retained experiment code. No real table content or extraction result is included.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
@@ -48,6 +50,12 @@ Third-party work is linked and attributed, not vendored.
   source-level semantic evaluation that sets an acceptance decision.
 - Model version `jev-1.13.0` is historical. Check current API documentation
   before any new integration; do not silently change an experiment's model.
+- Table compaction preserves raw inner HTML; it is not an HTML sanitizer.
+  Exact reversible serialization does not prove model interpretation, supported
+  custom parser-input format, fewer serving tokens, or extraction correctness.
+- E29 aggregates are preliminary frozen-checker observations. Failures still
+  need attribution to model behavior, representation, or checker limitations;
+  they must not be presented as independently adjudicated accuracy scores.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.

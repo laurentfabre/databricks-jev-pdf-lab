@@ -15,6 +15,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
   and scope-bound cache decisions.
 - A selective-parsing rehearsal preserving physical pages, native geometry,
   managed elements, cross-page context, and unresolved review states.
+- Reversible table-wrapper compaction with exact round-trip checks and
+  original-content fallback; this is not a validated extractor input contract.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -45,10 +47,16 @@ request and requires separate credentials and data-boundary approval.
 | Smaller extraction groups | Four room records recovered; class-name context recovered | Still missing dedicated class records; extraction 19.826 → 42.791 s |
 | Bounded Jev verifier | 3/5 error signals flagged; 0/3 false alarms | Four correlated, previously inspected cases; not calibrated acceptance |
 | Selective-parse rehearsal | 50 cases / 36 unique bundles; all 236 pages retained | Saved full-parser outputs; no new parsing or proved work avoided |
+| Reversible table compaction | Complete serialized envelopes 680,282 → 654,812 bytes (3.74% smaller) | Exact parser-output preservation, not measured inference savings |
+| Synthetic compact-input probe | All four inputs returned ten expected names and citations | No case passes the frozen narrow gate; defect attribution pending |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
+
+Findings cover E26–E28 and preliminary E29 results as well as the earlier study.
+The offline suite contains 114 synthetic tests; it does not reproduce private
+document accuracy or historical timing measurements.
 
 ## Safety and scope
 

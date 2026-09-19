@@ -10,14 +10,20 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 93 included synthetic tests. The original private project had 248
-passing synthetic tests at publication, including source-specific evaluators
-not copied here. The public number must not be presented as 248.
+There are 114 included synthetic tests (93 from the initial snapshot plus 21
+table-codec tests). The original private project last recorded 304 passing
+synthetic tests, including evaluators not copied here. The public number must
+not be presented as 304.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
 Databricks connection is needed. These tests validate implementation behavior,
 not historical timing, billing, or semantic accuracy on actual source files.
+
+The codec tests use fabricated HTML strings and parser-shaped dictionaries.
+They check exact restoration, unchanged metadata, and fallback for unsupported
+or larger representations. They do not call an extractor, authorize real-data
+processing locally, or prove that a model will interpret the compact input.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

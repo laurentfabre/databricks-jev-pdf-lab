@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twenty-six reusable Python modules and twenty-four synthetic test modules.
+- Thirty-two reusable Python modules and twenty-nine synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -64,6 +64,11 @@ no private Git history or original evidence directory is imported.
 - The symbol-to-legend bridge and its 37 synthetic tests are unchanged copies.
   Only generic code and fabricated fixtures are included; real semantic mappings,
   reviews, donor views, composition plans, audits, and outputs remain private.
+- Six E43–E46 modules and five test modules (155 synthetic tests) are unchanged
+  copies of the frozen prototypes: BBOX page provenance, reference/fast literal
+  audits, literal matchers, and original/corrected verifier-budget preparation.
+  Real source indexes, field inventories, requests, case budgets, profiles,
+  review files and all deployment/recovery notebooks remain private.
 
 ## Excluded
 
@@ -201,3 +206,27 @@ repeated symbols are rejected, not interpreted as a degree or tier. The unchange
 E40 composer is used downstream. Both inverses preserve the raw donor and base.
 Closing the inspected conditional inventory does not accept the full output,
 demonstrate an independent holdout, or prove avoided inference or savings.
+
+E43 supports full, unreordered original parser documents and the benchmark's
+BBOX Precision envelope only. It derives the union of cited physical locations;
+wrong facts may still point to real boxes. It cannot repair omitted records or
+prove citation support. Generated page claims do not justify themselves.
+
+E44/E45 literal audits distinguish exact/whitespace hits, other locations,
+generated descriptions and unknown projections. Cell-local matches do not prove
+ownership; misses may be translations, paraphrases or missing parser evidence.
+All semantic acceptance and safe-to-skip-review flags stay false. E45's measured
+improvement is a diagnostic kernel, not extraction latency or bill savings.
+
+E46 only constructs prospective requests; it has no transport. Use
+`shared_verifier_budget_v2.prepare` for the corrected unsupported-envelope guard;
+v1 is retained to preserve the historical failure, not as the recommended entry.
+Only populated strings become questions; all other slots remain unresolved.
+Exact reconstruction preserves data, not model judgments. Each question sees
+the entire shared state; other claims may affect interpretation. Question IDs
+are unique within a document only: any dispatcher must separately bind document
+and response identity. The 32/128/512 KiB thresholds are planning choices, not
+validated service limits. The historical model pin is not an availability claim.
+Full parser context includes generated descriptions and is not independent
+source truth. No real request packet is public, and publication grants no data
+egress permission. Unknown inference usage, latency and billed cost remain null.

@@ -4,6 +4,37 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — corpus diagnostics, shared budgets, and requested publication
+
+E43 improves physical-location consistency across both retained corpus arms,
+without accepting facts or recovering omitted entities. E44 inventories every
+schema path and distinguishes literal evidence from semantic support. E45 keeps
+all measured diagnostic outputs identical while reducing the whole-corpus median
+kernel from 24.566562 to 1.712976 s. This is diagnostic acceleration only.
+
+E46 retains all 3,316 string questions and full parser context. Sharing state
+within the same 24-question batches reduces complete prepared envelopes from
+299,729,035 to 18,057,439 bytes. No request is sent, and model judgment equivalence,
+token usage, serving latency and bill savings remain unmeasured. The first run's
+unsupported-envelope guard failed; a versioned correction reuses five successful
+cases and completes the remaining fifteen. Both runs' overhead is retained.
+
+At the user's request, publish six generic modules, five fabricated-input test
+modules (155 additional tests), and aggregate results. Real source indexes,
+packets, field inventories, profiles, raw outputs, notebooks, infrastructure and
+execution receipts remain private. Frozen schema and instructions stay unchanged.
+TypeSafe guidance keeps exact checks and calculations in code, shares common
+state with explicit question bindings, and distinguishes unknown evidence from
+semantic correctness. The four earlier source-bearing requests remain consumed.
+No new inference, PDF processing, Databricks job or authorization expansion is
+part of this publication. Full-output acceptance and end-to-end payoff remain
+unproven. The public offline suite now contains 625 synthetic tests.
+
+All 625 tests and the synthetic rehearsal passed before publication; retained
+private evidence checks passed for E43–E46. A review-checker arithmetic comparison
+was corrected to sum original integer milliseconds instead of comparing two
+binary-float addition paths; no measured evidence or frozen code changed.
+
 ## 2026-09-19 — adjacent evidence, reviewed legend bridge, and publication
 
 E41 moved retained observations next to their table through SQL-native span

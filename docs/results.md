@@ -862,6 +862,96 @@ remain additional. E42 adds diagnostic cost; it does not demonstrate that anothe
 extraction was needed or avoided. This remains a deterministic no-Jev control,
 not incremental semantic Jev benefit, generalization, or accepted-output savings.
 
+## Derive physical locations and retain semantic uncertainty (E43–E44)
+
+These diagnostics reuse 20 saved results from two managed extraction arms over
+10 documents / 236 unique physical pages. The arms are alternatives, not 20
+independent documents. No parsing, extraction or Jev call was repeated.
+
+E43 derives cited physical-page unions while preserving non-page fields,
+metadata and exact inverse restoration. It changes 640 of 641 record page arrays;
+one is already consistent, and one whole result abstains. Structural checks
+improve from 1/20 to 19/20. Post-hoc source review found consistent locations for
+42 present records; four omitted rooms remain missing. Location is not truth:
+unsupported meanings and generated descriptions remain unresolved. Kernels total
+0.205067 s inside a 12.754153 s experiment and 35.852 s job, not savings.
+
+E44 inventories all 33 schema paths and 8,250 concrete slots. It diagnoses 3,316
+populated strings, distinguishing cited literal hits, other locations, generated
+descriptions, and missing/ambiguous evidence. It applies no repair, acceptance,
+or rule to skip semantic review. Literal matching cannot establish ownership,
+translation equivalence, visual truth, or completeness. The grouped source-byte
+accounting excludes full requests; E46 measures complete envelopes instead.
+
+## Faster exact-output diagnostics (E45)
+
+Three rotated-order whole-corpus rounds compare the frozen E44 implementation
+with two alternatives. Both pre-normalize descriptions once; one caches escaped
+regular expressions, and one uses literal search with the same Unicode word
+boundaries. All 180 timed outputs and two profiled outputs exactly match E44,
+including its failed-response abstention.
+
+| Implementation | Whole-corpus median kernel | Reduction versus reference |
+|---|---:|---:|
+| Frozen reference | 24.566562 s | — |
+| Cached regex | 2.338108 s | 90.48% |
+| Literal find | 1.712976 s | 93.03% |
+
+Literal find saves 22.853586 s of this diagnostic kernel (14.34× speed ratio),
+not of the extraction pipeline. All 19 successful cases improve; the failed
+result's abstention is about 14.5 microseconds slower. Cached regex wins on two
+wine cases, but no fitted per-document dispatcher was introduced. Profiling
+reported inconsistent nested timing attribution, so it does not establish the
+exact causal contribution of each optimization.
+
+The entire comparison experiment took 117.306549 s inside a 148.584 s job
+(148.091 s task), with 8.609942 s fetching and 12.503186 s profiling among its
+components. Nested timings are not additive; the benchmark itself is added
+overhead. Same-corpus exact diagnostic outputs do not establish unseen-layout
+generalization, semantic acceptance, incremental Jev benefit or billed savings.
+
+## Complete shared-context verifier budgets without dispatch (E46)
+
+All 3,316 populated strings remain questions in every layout, with no literal
+pruning. Each keeps its field wrapper/path, owner record, citation bindings and
+problems, full parser document context, metadata, extraction root claims, frozen
+schema and instructions. The remaining numeric, visual, multilingual and
+omitted-entity obligations are not resolved by preparing these questions.
+
+| Prospective layout | Prepared requests | Complete UTF-8 bytes | Largest request | Requests above 128 KiB |
+|---|---:|---:|---:|---:|
+| One question per request | 3,316 | 299,904,001 | 281,070 | 1,219 |
+| Up to 24; context repeated per question | 148 | 299,729,035 | 6,742,305 | 146 |
+| Up to 24; shared context/owners | 148 | 18,057,439 | 314,568 | 53 |
+| Up to 8; shared context/owners | 422 | 42,456,492 | 291,288 | 154 |
+
+The paired 24-question layouts retain the same batches/IDs. Sharing removes
+281,671,596 serialized bytes (93.9754%); versus single-question requests the
+reduction is 93.9789%. These are measured prepared-input sizes, **not observed
+token, inference-latency or cost reductions**. All layouts decode and reconstruct
+each original claim/owner/context exactly. That does not prove the model will
+interpret them equivalently. The 32/128/512 KiB thresholds are planning choices,
+not service limits. No request was sent; model usage, latency and billed cost
+are unknown, not zero. Full-context packets remain private in the approved
+workspace; no source content was downloaded for this accounting review.
+
+The first run failed because an abstention guard assumed a failed response must
+be null or have an error string; a retained object response instead had unsupported
+metadata. A platform retry stopped at the partial-output guard. The corrected
+version reused five completed cases exactly and processed only the remaining 15.
+Original/continuation job durations were 78.305/163.895 s: 242.200 summed seconds
+of added diagnostic work, not continuous elapsed time or savings. Continuation
+task time was 163.442 s and experiment time 138.915104 s. Recorded preparation
+and measurement totals across both runs were 0.607654/133.682607 s; continuation
+alone contributed 0.476900/118.966349 s. These nested measures are not additive.
+All 57 remote budget tests passed. No model calls or PDF reads occurred.
+
+The transferable technique is to share repeated context while retaining explicit
+question bindings and unknowns. Incremental semantic Jev benefit still needs a
+separately authorized, matched evaluation with independent labels and a no-Jev
+control. The earlier four-request excerpt authorization is exhausted and does
+not cover these full-document packets. No production gate is recommended yet.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

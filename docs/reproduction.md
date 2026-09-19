@@ -10,16 +10,17 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 470 included synthetic tests: 93 from the initial snapshot, 21
+There are 625 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
 audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
 and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests
 and 24 row-repair-excerpt tests, plus 37 conditional-donor-composition tests,
-20 span-recipe tests, and 37 symbol-to-legend-bridge tests.
-The private project recorded 684 passing synthetic tests, including evaluators
-not copied here. The public
-number must not be presented as 684.
+20 span-recipe tests, 37 symbol-to-legend-bridge tests, 44 BBOX-provenance tests,
+40 BBOX-literal-audit tests, 14 optimized-lookup tests, and 57 verifier-budget
+tests (including 13 correction regressions).
+The private project recorded 839 passing synthetic tests, including evaluators
+not copied here. The public number must not be presented as 839.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -132,6 +133,25 @@ mapping can pass structural checks while remaining unaccepted: supplied semantic
 judgments are not validated by this code. `legend_bound_donor.build_view` makes
 no I/O or model call. Real views, plans, origins and audits are private. These
 tests do not reproduce the E42 source review, historical latency, or savings.
+
+BBOX provenance tests use fabricated records and geometry. They check page-union
+derivation, raw/metadata preservation, unsupported envelopes, hash bindings,
+abstention and exact inversion. A deliberately false cited claim can obtain a
+valid location: no semantic acceptance follows. Real page maps are not included.
+
+Literal-audit tests check Unicode boundaries, narrow table-cell projection,
+unknown/ambiguous geometry, schema inventory, and the separation of parser
+descriptions from source content. Differential tests compare both optimized
+matchers and full audits against the retained reference with seeded fabricated
+inputs. They reproduce code behavior, not the private corpus timings or truth.
+
+Verifier-budget tests cover all four request layouts, complete input recovery,
+explicit question bindings, owner deduplication by path, stale/mutated inputs,
+UTF-8 byte partitions, retained oversized requests and unresolved non-string
+slots. `shared_verifier_budget_v2.prepare` is the corrected entry; use `measure`
+from the original module for no-dispatch accounting. These modules make no
+network call and need no credential. Full real state must stay in the approved
+workspace. Neither passing tests nor small payloads authorize live evaluation.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

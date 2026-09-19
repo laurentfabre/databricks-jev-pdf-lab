@@ -41,6 +41,10 @@ and failures—not a production router or an accepted hotel-facts dataset.
   complete character accounting and explicit repeated ranges.
 - A reversible, reviewed symbol-to-legend bridge adding only references to
   existing citations; supplied semantic mappings remain unaccepted judgments.
+- BBOX-bound physical-page derivation and corpus-wide literal diagnostics,
+  including output-identical cached-regex and literal-search alternatives.
+- No-dispatch verifier request budgeting with full-context sharing, explicit
+  field/owner bindings, and exact serialized reconstruction across four layouts.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -86,12 +90,15 @@ request and requires separate credentials and data-boundary approval.
 | Conditional donor composition | Four reviewed visual relations / eight parent applications added without new inference | Two relations / four applications remain missing; 23 ms kernel / 27.553 s job plus prerequisites and unmeasured review; full output rejected |
 | Adjacent evidence with SQL preparation | Both remaining preparation markers recovered in a separate record | No explicit parent applications; two unsupported price bases; 16.735 s extraction / 33.657 s summed statements, not end-to-end latency |
 | Reviewed symbol-to-legend bridge | Two more relations / four parent applications added; known conditional inventory reaches 8/8 relations and 16/16 applications | 3.3 ms bridge + 22.1 ms composition inside 37.211 s job, with prior inference/review additional; full output still rejected |
+| BBOX physical-page derivation | 640 page arrays changed; structural checks 1/20 → 19/20 | Location consistency, not semantic support; 0.205 s kernels / 35.852 s job |
+| Exact-output literal lookup | Median diagnostic kernel 24.566562 → 1.712976 s (93.03% lower) | 180 timed outputs unchanged; diagnostic stage only, no end-to-end saving |
+| Shared full-context verifier preparation | Repeated24 → shared24: 299,729,035 → 18,057,439 UTF-8 bytes (93.98% lower), same 148 prepared requests | No requests sent; token cost, inference latency and judgment equivalence unmeasured |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings extend through E42, including the E29 checker correction, negative
+Findings extend through E46, including the E29 checker correction, negative
 real-document compaction result, bounded router scheduling improvement, and
 reviewed source-bound corrections and field-only composition. The broader audit
 found field and scope defects; the latest corrections do not resolve all of them
@@ -99,7 +106,7 @@ or establish payoff.
 The known conditional inventory is closed, not the whole menu or ten-document
 corpus. Source transcription, repeated symbols, full field/citation review,
 independent holdouts, and matched accepted-output economics remain open.
-The offline suite contains 470 synthetic tests; it does not reproduce private
+The offline suite contains 625 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

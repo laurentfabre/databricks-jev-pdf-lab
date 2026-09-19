@@ -391,6 +391,70 @@ and semantic citations remain unfinished. E30's raw result is unchanged.
 No incremental Jev benefit, full-corpus generalization, matched end-to-end
 latency saving, or attributable billing reduction is established.
 
+## Schema-wide field audit and source review (E33)
+
+E33 inventoried three retained outputs: E30 original, E30 compact, and E32's
+compact shadow. It accounts for every path in the unchanged schema, concrete
+fields and containers, missing/null/empty values, unexpected fields, and
+whole-string citation coverage restricted to original-source scopes. It does
+not repair outputs or evaluate semantics. No PDF read, parsing, extraction,
+Jev call, or SQL write occurred in the deterministic experiment.
+
+| Metric | Original | Compact | Compact shadow |
+|---|---:|---:|---:|
+| Items | 52 | 52 | 52 |
+| Schema paths inventoried | 33 | 33 | 33 |
+| Concrete field/container slots | 831 | 837 | 841 |
+| Price-basis slots | 56 | 55 | 56 |
+| Nonempty string bases | 14 | 55 | 56 |
+| Whole basis literal absent from source scopes | 14 | 43 | 43 |
+| Cited whole-literal bases | 0 | 11 | 12 |
+| Unsupported generic basis defaults, source-reviewed | 0 | 43 | 43 |
+| Empty allergen arrays | 52 | 52 | 52 |
+| Audit kernel | 0.031780935 s | 0.036158824 s | 0.034356387 s |
+
+Slots include containers and repeated fields, not independently verified facts.
+The sole schema path with no concrete slot is the element of the empty allergen
+arrays. That is unknown source presence, not evidence that allergens are absent.
+Every automated semantic status remains unevaluated and every accepted flag false.
+
+Do not treat literal mismatches as semantic errors. All fourteen original
+nonempty bases join bilingual phrases and therefore fail whole-string matching.
+One compact basis also has a cited equivalent in the other source language;
+the unmatched English literal alone does not establish a citation defect.
+By contrast, the 43 generic defaults are unsupported in source review and violate
+the frozen verbatim-basis/null-if-unstated requirement. E32 leaves them unchanged.
+
+A separate post-hoc assistant review inspected all seven retained source-page
+renders and all 52 item field sets in both E30 arms, plus document, policy,
+and legend fields. It covered nineteen leaf-field categories and recorded twelve
+scoped findings. This was not independent labeling, complete multilingual
+validation, or full semantic citation acceptance. Findings include:
+
+- Missing or conflated dietary legend distinctions and preparation-specific
+  properties lost from their conditional scope.
+- An explicit dietary property retained in prose but missing from its dedicated
+  field, and a document policy absent from the original arm.
+- Parser-origin characters propagated into names, distinct from a compact-only
+  extraction transcription error.
+- A qualifier lost when retaining only one language, and repeated symbols reduced
+  to a generic label. Symbol counts are not calibrated intensity levels.
+- Unresolved allergen evidence. Empty arrays do not authorize safety claims.
+
+These findings are summarized without publishing source text, item-level outputs,
+source mappings, or the private review evidence. They establish reasons to reject
+the inspected outputs, not a measured general accuracy or false-positive rate.
+
+All 23 new synthetic tests passed locally and remotely. The experiment including
+tests, reads, and writes took 2.198846904 s; the enclosing job took 26.563 s
+(task 26.123 s; reported setup 5 s / execution 21 s). These are additional
+diagnostic costs, not savings. No historical inference was repeated.
+
+Decision: do not promote compact output because one price was recovered.
+Separate source/parser defects, exact field assembly, semantic scope decisions,
+and full-output acceptance. The reusable audit improves visibility into failures;
+it does not prove a Jev advantage, generalization, or end-to-end cost reduction.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

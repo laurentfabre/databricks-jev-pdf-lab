@@ -175,3 +175,34 @@ inference. Only code, synthetic tests, and aggregates are published. Source
 content, extractions, private receipts, infrastructure, and deployment notebooks
 remain excluded. No additional source-bearing authorization or research-goal
 completion is implied by this publication.
+
+## 2026-09-19 — schema-wide audit and publication
+
+E33 inventoried all 33 schema paths across three retained outputs without new
+inference or PDF reads. It counted 831/837/841 concrete field/container slots
+and kept semantic statuses unevaluated. Empty/missing fields remain unknown
+source presence; literal citation matching is not semantic acceptance.
+
+A separate post-hoc assistant review of seven source-page renders and both
+52-item E30 outputs found required-field and scope defects beyond the earlier
+amount/marker counts. Compact and its recovered shadow retain 43 unsupported
+generic basis defaults. Legend, conditional-property, field-placement, parser,
+and extraction defects remain. Bilingual literal misses were kept distinct from
+proven errors, and empty allergen arrays were not interpreted as safety evidence.
+Neither complete output is accepted; the one-price recovery is not a promotion gate.
+
+The audit kernels took 31.8–36.2 ms; the experiment took 2.199 s and its enclosing
+job 26.563 s. These are diagnostic costs, not avoided inference or savings.
+Retained-evidence checks verify hashes and accounting, not source truth.
+
+Published the unchanged generic audit and 23 fabricated-input tests, bringing
+the public suite to 222. No source text, real field inventory, extraction output,
+source-scope map, manual-review record, private receipt, or deployment setting
+is included. Initial sandbox documentation/GitHub network access failed; scoped
+access recovered read-only verification without additional token permissions.
+
+TypeSafe citation guidance reinforces the separation of literal presence from
+contextual support. Databricks guidance favors persisted results over duplicate
+inference. Publication makes no new source-bearing request or document experiment.
+The proposed follow-on recovery experiment has not been registered or run;
+full-corpus acceptance, independent holdouts, and matched economics remain open.

@@ -10,12 +10,12 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 199 included synthetic tests: 93 from the initial snapshot, 21
+There are 222 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
-tests, plus 18 bounded-concurrency and 37 source-bound-recovery tests.
-The private project recorded 389
+tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
+audit tests. The private project recorded 412
 passing synthetic tests, including evaluators not copied here. The public
-number must not be presented as 389.
+number must not be presented as 412.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -48,6 +48,16 @@ citation gaps, unsupported syntax, immutable original fields, and idempotency.
 They do not validate real source grouping, translation equivalence, or semantic
 support. Every proposed shadow edit remains review-required and not accepted.
 No hosted call or document read occurs inside `source_bound_recovery.derive`.
+
+Field-audit tests use fabricated schema nodes, text, citation spans, and responses.
+They cover schema-path accounting, missing/null/empty values, source-scope and
+hash guards, immutable inputs, type mismatches, citation gaps, wrapper handling,
+and Precision v2.1 response checks. Every semantic status stays unevaluated;
+no row is accepted. Literal matches do not establish correct meaning or source
+fidelity, and literal misses may reflect bilingual formatting rather than error.
+`schema_field_audit.audit` performs no I/O, but its returned inventory copies
+field values; do not publish real-data inventories. The public tests do not
+reproduce the private E33 manual source review or its historical measurements.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install
@@ -86,7 +96,8 @@ Before a new integration, check current primary documentation:
 
 - [TypeSafe documentation index](https://docs.typesafe.ai/llms.txt),
   [routing](https://docs.typesafe.ai/patterns/intent-routing), and
-  [extraction cascades](https://docs.typesafe.ai/cookbooks/sde_cascade).
+  [extraction cascades](https://docs.typesafe.ai/cookbooks/sde_cascade), plus
+  [citation checks](https://docs.typesafe.ai/cookbooks/citation_check).
 - [Databricks ai_parse_document](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_parse_document)
   and [ai_extract](https://docs.databricks.com/aws/en/sql/language-manual/functions/ai_extract).
 

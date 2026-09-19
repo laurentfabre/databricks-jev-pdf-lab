@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Seventeen reusable Python modules and fifteen synthetic test modules.
+- Eighteen reusable Python modules and sixteen synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -30,6 +30,9 @@ no private Git history or original evidence directory is imported.
 - The source-bound recovery module and its 37 synthetic tests are unchanged
   copies. Its dependencies are already public. No source fragments, real group
   mappings, recovered records, private evaluator, or deployment notebook is included.
+- The schema-field audit module and its 23 synthetic tests are unchanged copies.
+  Only generic code and fabricated fixtures are included; real field inventories,
+  source scopes, manual-review records, outputs, and deployment files are excluded.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
@@ -81,6 +84,14 @@ Third-party work is linked and attributed, not vendored.
   Its one reviewed addition is not an independently labeled holdout result,
   full-output acceptance, general false-positive estimate, or proven saving.
   Shadow additions inherit citation IDs, not model-generated confidence.
+- E33 inventories fields and exact strings; it cannot establish source fidelity,
+  multilingual equivalence, semantic citation support, or complete fact coverage.
+  Its schema walker supports the included extraction-schema shape, not arbitrary
+  JSON Schema. Caller-provided source scopes require independent validation.
+  Audit results contain copied field values and must remain inside the approved
+  data boundary when real inputs are used. Empty allergen arrays prove no safety
+  property. All semantic statuses remain unevaluated and acceptance stays false.
+  The separate assistant source review is post-hoc, not independent labeling.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.

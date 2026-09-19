@@ -35,6 +35,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
   inverse restoration, without relabelling edits as service-generated evidence.
 - Exact row-level repair excerpts with retained parent context, origin labels,
   and explicit omissions; supplied selections are not automated semantic routing.
+- Parent-conditioned composition of retained donor markers, with exact source
+  wording, existing citation spans, origin labels, and reversible lineage.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -77,17 +79,18 @@ request and requires separate credentials and data-boundary approval.
 | Structural table-scope control | 356 tables accounted for; one candidate matches eight reviewed target links | 20 unsupported tables; 0.111 s scan kernel / 29.361 s job; no field repair, semantic acceptance, or savings |
 | Conditional field projection | Two reviewed relations / four parent applications recovered without new inference | Six visual relations remain missing; 28.7 ms kernel / 32.489 s job plus prerequisites and unmeasured review; full output rejected |
 | Row-level repair extraction | Five of seven targeted preparation-marker relations appear across two unpriced preparation records | Explicit parent linkage still missing; third case misses both markers and adds unsupported price bases; 44.302 s added extraction, no full-output merge |
+| Conditional donor composition | Four reviewed visual relations / eight parent applications added without new inference | Two relations / four applications remain missing; 23 ms kernel / 27.553 s job plus prerequisites and unmeasured review; full output rejected |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings extend through E39, including the E29 checker correction, negative
+Findings extend through E40, including the E29 checker correction, negative
 real-document compaction result, bounded router scheduling improvement, and
 reviewed source-bound corrections and field-only composition. The broader audit
 found field and scope defects; the latest corrections do not resolve all of them
 or establish payoff.
-The offline suite contains 376 synthetic tests; it does not reproduce private
+The offline suite contains 413 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

@@ -4,6 +4,40 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — conditional donor composition and requested publication
+
+E40 applied four supplied visual relations from retained E39 donors to two
+existing parents, recovering eight conditional applications without new inference.
+Exact multilingual heading/preparation wording and donor markers are retained;
+14 existing citations are rebased without widening, with observation/review
+origins kept distinct. Prior conditional entries, all unrelated fields, metadata
+and parent lineage stay exact. Inverse restoration passes. No whole donor item,
+unsupported price basis, or new service confidence is imported.
+
+Bounded post-hoc assistant review supports all eight additions, not full-output
+acceptance. Six of eight reviewed conditional relations / twelve of sixteen
+parent applications are now represented. Two relations / four applications and
+other source/field defects remain. This is inspected development data and supplied
+semantic selection, not a general selector, independent holdout, or Jev benefit.
+
+Plan compilation took 0.002696 s, composition 0.023041 s, and the experiment
+2.862269 s inside a 27.553 s job. E39 extraction took an additional 44.302 s;
+preparation, evaluation, earlier evidence and unmeasured review also cost work.
+The kernel is not an end-to-end saving. A yielded upload observation was initially
+misclassified as failure; resuming its existing session confirmed success, and
+neither upload nor job was replayed. All 37 new synthetic tests passed, with 76
+tests in the remote experiment. Raw artifacts and execution handles stay frozen.
+
+At the user's request, publish the unchanged generic composer, fabricated tests,
+and aggregate results, bringing the public suite to 413. Real inputs, outputs,
+reviews, plans, maps, infrastructure and receipts remain private. TypeSafe's
+citation guidance keeps literal validity separate from contextual support;
+Databricks guidance preserves saved stages without inference replay. Initial
+sandbox documentation and credential checks failed; scoped read-only access
+succeeded. Publication changes no integration contract, data boundary, token
+permission, or source-bearing authorization. It runs no document experiment or
+hosted inference. Equal-quality end-to-end payoff remains unproven.
+
 ## 2026-09-19 — row-level repair and requested publication
 
 E39 narrowed three retained development inputs to one preparation row each,

@@ -729,6 +729,56 @@ Any future derived composition must explicitly preserve parent-conditioned
 meaning and honest evidence origins. No new Jev call was made; no incremental
 semantic Jev benefit, independent generalization, or end-to-end payoff follows.
 
+## Reuse retained donor evidence with explicit parent scope (E40)
+
+E40 composes four reviewed visual relations from the two usable E39 donors
+into the two existing parent offerings. Each appended entry combines the exact
+multilingual conditional heading, exact preparation wording, and retained donor
+marker. The eight additions are conditional parent applications, not separate
+offerings or unconditional parent properties. The previous four conditional
+applications remain exact; the already represented relation is not duplicated.
+The failing third donor and its unsupported price bases are not imported.
+
+| Bounded outcome or measurement | Observed result |
+|---|---:|
+| Newly recovered relations / parent applications | 4 / 8 |
+| Total reviewed conditional relations represented | 6/8 |
+| Total reviewed conditional parent applications | 12/16 |
+| Remaining conditional relations / applications | 2 / 4 |
+| Retained items / amounts / legend entries | 52 / 56 / 7 |
+| Existing donor citations rebased without widening | 14 |
+| Supplied-plan compilation | 0.002696 s |
+| Composition kernel | 0.023041 s |
+| Complete experiment | 2.862269 s |
+| Enclosing job / task duration | 27.553 s / 27.028 s |
+
+All unselected response fields, base citations, non-citation metadata and parent
+lineage are preserved. Exact inverse restoration passes. Donor name, details,
+and marker citations travel together, retaining complete preparation-observation
+coverage and distinguishing provisional observations from assistant review.
+The composite is explicitly derived, not a new service response or model input.
+Neither rebasing nor inherited metadata creates confidence in the edits.
+
+All eight additions received a bounded post-hoc assistant review against source
+renders and cited substrings. This supports the changed fields only: it is not
+independent labeling, automatic semantic discovery, a whole-menu acceptance audit,
+or an unseen-layout result. The full output remains rejected; the two missing
+relations and other previously identified field/source defects remain. The other
+nine documents and all full-corpus obligations are unchanged.
+
+All 37 new synthetic tests and 76 remote tests passed, including the 39 frozen
+field-composition tests. Runtime was ARM64 / Python 3.12.3; reported job setup
+and execution were 5 and 21 seconds. No new inference, PDF read, or Jev request
+occurred. E39's 44.302 s extraction and its preparation/evaluation jobs, earlier
+evidence generation, transfers, and unmeasured selection/review are additional
+costs. Nested kernel, experiment, task and job durations must not be added to
+one another. A 23 ms execution kernel is not a 27.553 s end-to-end saving.
+
+This is a deterministic, review-driven no-Jev control. It shows bounded reuse
+of existing evidence to repair fields, not that another extraction was needed
+or avoided. No accepted-output cost reduction, incremental semantic Jev benefit,
+or generalizable end-to-end payoff is established.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

@@ -10,15 +10,15 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 376 included synthetic tests: 93 from the initial snapshot, 21
+There are 413 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
 audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
 and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests
-and 24 row-repair-excerpt tests.
-The private project recorded 590 passing synthetic tests, including evaluators
+and 24 row-repair-excerpt tests, plus 37 conditional-donor-composition tests.
+The private project recorded 627 passing synthetic tests, including evaluators
 not copied here. The public
-number must not be presented as 590.
+number must not be presented as 627.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -104,6 +104,16 @@ review labels, and rejection of stale, ambiguous, or unsupported inputs.
 selection quality, correct parent ownership, sufficient context, or semantic
 extraction accuracy. Its real output text and audits must stay private; the
 public suite cannot reproduce the E39 source-specific extraction or review.
+
+Conditional-donor tests use fabricated parent records, preparation observations,
+markers, and supplied plans. They cover exact appends, unchanged fields, source
+hash/page bindings, complete cited observation spans, retained origin labels,
+unique rebased citation IDs, prior lineage, inverse restoration, and rejection
+of gaps, stale selections, replay and unsupported donors. A negated heading
+can pass structural checks: these tests explicitly do not prove the supplied
+semantics. `conditional_donor_composition.compose` performs no I/O or model call.
+Real donor text, plans, audits and derived outputs stay private. The tests do
+not reproduce the private E40 bounded source review or historical timing.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

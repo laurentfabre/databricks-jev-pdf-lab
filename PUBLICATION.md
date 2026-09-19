@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Twenty-three reusable Python modules and twenty-one synthetic test modules.
+- Twenty-four reusable Python modules and twenty-two synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -55,6 +55,9 @@ no private Git history or original evidence directory is imported.
 - The row-repair excerpt builder and its 24 synthetic tests are unchanged copies.
   Only generic assembly code and fabricated fixtures are included; real excerpts,
   selection plans, provenance maps, responses, notebooks, SQL, and receipts are not.
+- The conditional-donor composer and its 37 synthetic tests are unchanged copies.
+  Only generic execution code and fabricated fixtures are included; real donors,
+  source scopes, selections, review records, composites, audits, and outputs are not.
 
 ## Excluded
 
@@ -161,4 +164,17 @@ separate legend page; it is not a general document slicer. Outputs explicitly
 remain partial and unaccepted, and omitted material stays required. Real output
 strings, plans, and origin maps contain private content. Five observed marker
 relations in separate preparation records are not five completed parent-scoped
-repairs. The latest full-menu output is unchanged and rejected.
+repairs. E39 itself leaves the full-menu output unchanged and rejected.
+
+The E40 conditional-donor composer executes supplied post-hoc selections under
+the benchmark's schema shape and span-cited Precision envelope. It does not
+discover parent ownership, validate symbol meanings, or authenticate reviews.
+Every supplied relation is applied to every supplied owner; correct grouping
+is a caller responsibility. Hashes, page guards and complete observation-span
+coverage prove identity and literal coverage, not semantic truth. A synthetic
+test deliberately accepts a negated heading structurally while retaining false
+acceptance flags. Existing spans are rebased without widening; provisional and
+assistant-reviewed origins stay distinct. Inherited metadata is not confidence
+in derived edits. Real plans, audits and composite text remain private. Four
+reviewed relations do not establish whole-output acceptance, unseen-layout
+generalization, avoided extraction, or incremental Jev benefit.

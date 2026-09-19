@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Thirty-two reusable Python modules and twenty-nine synthetic test modules.
+- Thirty-three reusable Python modules and thirty synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -69,6 +69,11 @@ no private Git history or original evidence directory is imported.
   audits, literal matchers, and original/corrected verifier-budget preparation.
   Real source indexes, field inventories, requests, case budgets, profiles,
   review files and all deployment/recovery notebooks remain private.
+- The E47 matched-verifier module and its 20 synthetic tests are published.
+  Only its docstring's private workspace name is replaced with an approved
+  workspace description; executable logic and fabricated tests are unchanged.
+  Real consent manifests, labels, packet identities, deployment notebooks,
+  credentials, raw responses, per-claim judgments, and ledgers are excluded.
 
 ## Excluded
 
@@ -230,3 +235,22 @@ validated service limits. The historical model pin is not an availability claim.
 Full parser context includes generated descriptions and is not independent
 source truth. No real request packet is public, and publication grants no data
 egress permission. Unknown inference usage, latency and billed cost remain null.
+
+E47 adds a separate single-driver transport over the E46 builder. It retains the
+registered benchmark shape: 48 claims, two balanced rounds, 100 maximum attempts,
+2,362,388 maximum body bytes, and four maximum in flight. These are historical
+experiment limits, not general API limits or a production batching policy.
+The supplied consent object and reference hash do not authenticate approval,
+reviewer identity, source truth, or execution location. The excluded private
+notebook separately enforced the authorized workspace, frozen input/label/code
+hashes and credential boundary. Publication grants no source-bearing allowance.
+
+Calling `run` with its default sender makes live requests. Protect all output
+directories: exact credential-byte redaction is not a comprehensive privacy
+filter for service responses. Close/readback markers are a single-driver crash
+safeguard, not distributed transactions, power-loss durability, or guaranteed
+exactly-once billing. Do not bypass a prior marker by using a new directory.
+The probability-sum tolerance handles four rounded probabilities; it is not a
+semantic acceptance threshold. Published findings show changed model judgments
+despite exact claim/context reconstruction, so no equivalent-quality promotion
+follows. Three ambiguous labels stay separate from strict reference accuracy.

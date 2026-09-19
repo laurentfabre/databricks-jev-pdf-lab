@@ -4,6 +4,35 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — measured verifier sharing and requested publication
+
+E47 completed a separately authorized 100-attempt comparison over all 48
+populated strings from one retained document, with two balanced rounds and
+the same four-request concurrency cap. No extra extraction, PDF processing,
+retry or probe occurred. The allowance is fully consumed.
+
+Shared24 reduces verifier-stage time from 17.59–17.71 s to 1.67–1.91 s and
+service-reported input tokens from 451,264 to 39,587 per round (91.2275%).
+Published-rate input cost falls from $0.018953088 to $0.001662654. The enclosing
+comparison job takes 91.240 s; no end-to-end or billed saving is established.
+
+Frozen pre-inference development labels yield 45/45 determinate matches for
+singles and 44/45 for sharing. The same language judgment changes in both
+rounds. Three ambiguities stay outside strict accuracy; confidence on an
+unresolved category increases markedly under sharing. No threshold is fitted
+to these cases, and there are no determinate negative examples or independent
+labels. Reject promotion as an equal-quality replacement; retain the measured
+overhead reduction and all quality limitations.
+
+At the user's request, publish the generic bounded runner and 20 fabricated-input
+tests, plus aggregate findings. Replace only its private workspace docstring;
+preserve executable logic and historical modules. Real packets, per-claim
+judgments, source labels, consent manifests, credentials, infrastructure,
+notebooks and execution receipts stay private. The public suite contains 645
+synthetic tests. TypeSafe guidance keeps shared state explicitly bound and
+distinguishes typed output from truth. Publication performs no new inference
+or document experiment, and does not authorize another hosted call.
+
 ## 2026-09-19 — corpus diagnostics, shared budgets, and requested publication
 
 E43 improves physical-location consistency across both retained corpus arms,

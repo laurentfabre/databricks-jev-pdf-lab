@@ -952,6 +952,71 @@ separately authorized, matched evaluation with independent labels and a no-Jev
 control. The earlier four-request excerpt authorization is exhausted and does
 not cover these full-document packets. No production gate is recommended yet.
 
+## Matched shared-state Jev verification (E47)
+
+A separately authorized comparison reused one retained 11-page document and
+all 48 populated string claims. Both layouts preserve full parser context,
+owning records, citation bindings, and frozen extraction instructions/schema.
+Round 1 runs single then shared24; round 2 reverses that order. Both use a
+maximum of four concurrent requests, with observed maxima of four for singles
+and two for shared24. This avoids comparing batching with an artificially
+serial single-question baseline.
+
+All 100 approved attempts and 2,362,388 body bytes completed, with no retries,
+extra probes, PDF/image transmission, or new parsing/extraction. The allowance
+is exhausted. No further request is authorized by this publication.
+
+| Per 48-claim comparison | Single questions | Shared24 |
+|---|---:|---:|
+| Requests per round | 48 | 2 |
+| Round 1 verifier-stage wall time | 17.588546 s | 1.672101 s |
+| Round 2 verifier-stage wall time | 17.705139 s | 1.906864 s |
+| Reported input tokens, each round | 451,264 | 39,587 |
+| Published-rate input cost, each round | $0.018953088 | $0.001662654 |
+| Determinate reference matches, each round | 45/45 | 44/45 |
+| Ambiguous claims, separate from strict score | 3 | 3 |
+
+Sharing saves 15.916445 s out of 17.588546 s (90.4932%) and 15.798275 s out
+of 17.705139 s (89.2299%) at this verifier-stage boundary. Reported input tokens
+fall 91.2275%; published-rate cost differs by $0.017290434 per comparison.
+Unlike E46, these are observed service tokens and stage timers, not byte-based
+estimates. Neither arm is a deployed or accepted baseline.
+
+**Quality veto:** single requests match all 45 determinate development labels;
+shared batches match 44 in both rounds. A language claim changes from supported
+to unaddressed. Cross-arm choice agreement is 47/48; within each arm, repeat
+agreement is 48/48, though probabilities vary. Three duration/taxonomy ambiguities
+remain outside strict accuracy, not pruned from inference. Both arms support an
+unresolved category; shared confidence rises to 0.94/0.96 from 0.37/0.34. High
+confidence does not resolve that review obligation. No retrospective threshold,
+selective rescue call, automatic acceptance, or output deletion was introduced.
+
+Reference labels were frozen before any new answers, after development-assistant
+review of all 11 retained original page images. All 45 determinate labels are
+positive; there are no determinate negative examples. This is not independent
+ground truth, an unseen-layout holdout, or an estimate of error-detection recall.
+The no-Jev control retains 12 own-cited literal hits, five elsewhere-only hits,
+and 31 misses, with no automatic semantic decisions. Required missing entities,
+numeric/empty/visual slots, and full-output completeness remain unresolved.
+
+Total pilot usage is 981,702 input and 14,536 output tokens. The published input
+estimate is $0.041231484; actual billed and Databricks costs remain unknown.
+Enclosing job time is 91.240 s, task time 90.813 s; the platform reports 5 s
+setup and 85 s execution. Synthetic tests take 1.903597 s, common preparation
+2.877132 s, transport execution 40.033384 s, and evaluation 0.160475 s. The
+recorded 46.223835 s experiment timer stops before final artifact hashing and
+persistence, which are included in the enclosing job. These nested boundaries
+are nonadditive; aggregate HTTP times overlap under concurrency. Per-arm stage
+timers include intent/readback, networking and validation, but exclude common
+preparation and final arm-summary save. No saved parsing/extraction is credited.
+
+The transferable candidate is explicit context sharing with bounded scheduling
+and quality checks. The observed judgment change prevents equal-quality
+promotion. No incremental semantic benefit over no-Jev review, accepted full
+output, independent generalization, or end-to-end saving is established. Next
+evaluate field-scope-aware questions with independent mixed-quality references
+and unseen layouts, under a new authorization before any content-bearing call.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

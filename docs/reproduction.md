@@ -10,7 +10,7 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 625 included synthetic tests: 93 from the initial snapshot, 21
+There are 645 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
 audit tests, plus 38 reviewed-field-projection, 39 cited-field-composition,
@@ -18,9 +18,9 @@ and 32 table-scope-candidate tests, plus 21 chained-projection-lineage tests
 and 24 row-repair-excerpt tests, plus 37 conditional-donor-composition tests,
 20 span-recipe tests, 37 symbol-to-legend-bridge tests, 44 BBOX-provenance tests,
 40 BBOX-literal-audit tests, 14 optimized-lookup tests, and 57 verifier-budget
-tests (including 13 correction regressions).
-The private project recorded 839 passing synthetic tests, including evaluators
-not copied here. The public number must not be presented as 839.
+tests (including 13 correction regressions), plus 20 matched-verifier tests.
+The private project recorded 859 passing synthetic tests, including evaluators
+not copied here. The public number must not be presented as 859.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -152,6 +152,21 @@ slots. `shared_verifier_budget_v2.prepare` is the corrected entry; use `measure`
 from the original module for no-dispatch accounting. These modules make no
 network call and need no credential. Full real state must stay in the approved
 workspace. Neither passing tests nor small payloads authorize live evaluation.
+
+Matched-verifier tests fabricate 48 claims and stub every HTTP attempt. They
+check exact schedules, hashes/byte budgets, full preflight before any send,
+model/Choice/usage contracts, four-request concurrency, immediate stop/drain,
+unknown-outcome replay refusal, credential echo redaction, and separate
+determinate/ambiguous scoring. Fake token counts are test values only, not a
+tokenizer or evidence for the real model's context limits. No private reference
+labels, actual payloads, per-claim responses, or notebooks are supplied.
+
+`jev_matched_verifier.run` defaults to the live transport: do not call it on
+real data without separate destination/content approval and execution in the
+approved workspace. Its consent object is an integrity allowlist, not permission
+authentication. The historical limits and two-round shape are intentionally
+fixed. Interrupted directories block replay and must be retained. Offline
+passing tests cannot reproduce E47's serving latency or source judgments.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

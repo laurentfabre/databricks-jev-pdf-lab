@@ -45,6 +45,9 @@ and failures—not a production router or an accepted hotel-facts dataset.
   including output-identical cached-regex and literal-search alternatives.
 - No-dispatch verifier request budgeting with full-context sharing, explicit
   field/owner bindings, and exact serialized reconstruction across four layouts.
+- Matched single-question versus shared-state verifier scheduling with complete
+  preflight allowlists, bounded attempts, fail-stop ledgers, and separate
+  determinate/ambiguous reference accounting.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -93,12 +96,13 @@ request and requires separate credentials and data-boundary approval.
 | BBOX physical-page derivation | 640 page arrays changed; structural checks 1/20 → 19/20 | Location consistency, not semantic support; 0.205 s kernels / 35.852 s job |
 | Exact-output literal lookup | Median diagnostic kernel 24.566562 → 1.712976 s (93.03% lower) | 180 timed outputs unchanged; diagnostic stage only, no end-to-end saving |
 | Shared full-context verifier preparation | Repeated24 → shared24: 299,729,035 → 18,057,439 UTF-8 bytes (93.98% lower), same 148 prepared requests | No requests sent; token cost, inference latency and judgment equivalence unmeasured |
+| Matched shared-state Jev verification | 48-claim stage 17.59–17.71 → 1.67–1.91 s; 91.23% fewer reported input tokens | Shared batches match 44/45 determinate development labels versus 45/45 for singles; not equal-quality or end-to-end savings |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings extend through E46, including the E29 checker correction, negative
+Findings extend through E47, including the E29 checker correction, negative
 real-document compaction result, bounded router scheduling improvement, and
 reviewed source-bound corrections and field-only composition. The broader audit
 found field and scope defects; the latest corrections do not resolve all of them
@@ -106,7 +110,10 @@ or establish payoff.
 The known conditional inventory is closed, not the whole menu or ten-document
 corpus. Source transcription, repeated symbols, full field/citation review,
 independent holdouts, and matched accepted-output economics remain open.
-The offline suite contains 625 synthetic tests; it does not reproduce private
+E47 now measures hosted verifier overhead, not just serialized bytes. Its
+quality regression prevents promotion as an equal-quality replacement; two
+rounds on one inspected document do not establish independent generalization.
+The offline suite contains 645 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

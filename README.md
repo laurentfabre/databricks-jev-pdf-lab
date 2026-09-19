@@ -21,6 +21,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
   original-content fallback; this is not a validated extractor input contract.
 - Citation interval unions that preserve uncited gaps, and annotation-preserving
   compaction with synthetic regression tests; neither proves semantic support.
+- Source-bound inline-price recovery into separate review-required shadow outputs,
+  preserving exact literals, existing fields, and inherited citation IDs.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -55,14 +57,16 @@ request and requires separate credentials and data-boundary approval.
 | Reversible table compaction | Complete serialized envelopes 680,282 → 654,812 bytes (3.74% smaller) | Exact parser-output preservation, not measured inference savings |
 | Synthetic compact-input probe | After checker review, compact STRING passes 10/10 narrow item checks | Post-hoc diagnostic; real source quality is separate |
 | Full-evidence menu compaction | 4.91% fewer input bytes; 112.352 → 117.254 s | One structured supplement price omitted; neither arm accepted |
+| Source-bound price recovery | One shadow addition; compact amount coverage 55/56 → 56/56; no new inference | About 13 ms recovery kernel, 46.124 s enclosing job; incomplete quality review, no demonstrated savings |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings cover E26–E31, including the E29 checker correction, negative
-real-document compaction result, and bounded router scheduling improvement.
-The offline suite contains 162 synthetic tests; it does not reproduce private
+Findings extend through E32, including the E29 checker correction, negative
+real-document compaction result, bounded router scheduling improvement, and
+one reviewed source-bound recovery. The offline suite contains 199 synthetic
+tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

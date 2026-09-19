@@ -346,6 +346,51 @@ saving, attributable compute-cost saving, accepted end-to-end benefit, or
 incremental semantic Jev payoff has been established. Four paired trials on
 one workload do not demonstrate performance across other services or loads.
 
+## Source-bound structured-price recovery (E32)
+
+Both saved E30 responses were scanned without reading PDFs or repeating
+parsing, extraction, or Jev inference. This deterministic control looks for a
+narrow parenthesized plus-price grammar already retained in an output's name
+or details and fully covered by source-span citations. It requires a cited
+name anchor, unique source-group/output ownership, and the same physical page.
+Unknown money syntax, ambiguous ownership, missing citations, and recognized
+negative or conditional wording abstain. It never overwrites existing fields.
+
+| Metric | Original arm | Compact arm |
+|---|---:|---:|
+| Items scanned | 52 | 52 |
+| Candidate occurrences | 0 | 2 |
+| Shadow structured-price additions | 0 | 1 |
+| Structured amount coverage, before → after | 56/56 → 56/56 | 55/56 → 56/56 |
+| Marker associations, unchanged | 48/49 | 48/49 |
+| Offerings / physical-page records, unchanged | 52/52 | 52/52 |
+| Recovery kernel | 0.013418645 s | 0.012942240 s |
+
+The two compact candidates are language alternatives for one supplement, not
+two additional prices. Their full literal conditions remain in the private
+audit; the selected complete phrase becomes the shadow price basis. Existing
+fields and raw outputs remain unchanged. New fields inherit citation IDs,
+not invented model confidence or new service citations.
+
+Assistant visual review of the retained source page supports this one delta.
+It is neither independent human labeling nor held-out evaluation. Source
+grouping and translation equivalence remain caller hypotheses, literal coverage
+does not prove meaning, and the wording filter is incomplete. An existing
+amount/currency pair suppresses an addition without certifying its basis.
+The unchanged original arm is not a general false-positive-rate measurement.
+
+All 37 new synthetic tests passed locally and remotely. The experiment including
+tests, reads, and writes took 2.920191396 s; the enclosing job took 46.124 s
+(task 45.668 s; reported setup 5 s / execution 40 s). These are additional costs,
+not measured savings. In particular, no evidence establishes that E30's
+117.254-second extraction needed to be repeated or was avoided.
+
+Decision: retain the narrow recovery and immutable shadow/audit pattern. Neither
+full output is accepted: dietary/preparation scope, other required fields,
+and semantic citations remain unfinished. E30's raw result is unchanged.
+No incremental Jev benefit, full-corpus generalization, matched end-to-end
+latency saving, or attributable billing reduction is established.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Sixteen reusable Python modules and fourteen synthetic test modules.
+- Seventeen reusable Python modules and fifteen synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -27,6 +27,9 @@ no private Git history or original evidence directory is imported.
 - The bounded-concurrency module and its 18 synthetic tests are unchanged copies.
   They include a historical benchmark-specific veto, not a general safety policy.
   No real requests, private page mapping, deployment notebook, or raw ledger is included.
+- The source-bound recovery module and its 37 synthetic tests are unchanged
+  copies. Its dependencies are already public. No source fragments, real group
+  mappings, recovered records, private evaluator, or deployment notebook is included.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
@@ -72,6 +75,12 @@ Third-party work is linked and attributed, not vendored.
   and at most twelve batches; it is not an adaptive production rate limiter.
   Page mapping retains the historical doc-8/page-12 veto. Partial/unknown rounds
   require investigation, not automatic replay in a fresh directory.
+- E32 supplies a deterministic candidate/control, not a Jev integration. Source
+  groups and translation equivalence are caller hypotheses, its wording filter
+  is incomplete, and same amount/currency does not validate a price basis.
+  Its one reviewed addition is not an independently labeled holdout result,
+  full-output acceptance, general false-positive estimate, or proven saving.
+  Shadow additions inherit citation IDs, not model-generated confidence.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.

@@ -10,11 +10,12 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 162 included synthetic tests: 93 from the initial snapshot, 21
+There are 199 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
-tests, plus 18 bounded-concurrency tests. The private project recorded 352
+tests, plus 18 bounded-concurrency and 37 source-bound-recovery tests.
+The private project recorded 389
 passing synthetic tests, including evaluators not copied here. The public
-number must not be presented as 352.
+number must not be presented as 389.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -40,6 +41,13 @@ Calling `run_round` without a stub sender makes live requests; that requires
 separate credentials and data-boundary approval in the approved workspace.
 Retain interrupted-round directories for investigation; do not bypass markers
 by creating another directory and resubmitting an unknown outcome.
+
+Recovery tests use fabricated cited phrases, response fields, and source groups.
+They cover exact money parsing, identity anchors, page/ownership ambiguity,
+citation gaps, unsupported syntax, immutable original fields, and idempotency.
+They do not validate real source grouping, translation equivalence, or semantic
+support. Every proposed shadow edit remains review-required and not accepted.
+No hosted call or document read occurs inside `source_bound_recovery.derive`.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

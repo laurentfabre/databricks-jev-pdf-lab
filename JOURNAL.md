@@ -149,3 +149,29 @@ raw metadata packets, private receipts, infrastructure, and deployment settings
 remain excluded. TypeSafe guidance keeps code-owned validation and semantic
 acceptance separate. Public publication neither grants new source-bearing
 authorization nor completes the research objective.
+
+## 2026-09-19 — source-bound recovery and publication
+
+E32 scanned both saved E30 outputs, 52 items each, without new inference or
+PDF processing. The original arm was unchanged; two compact language candidates
+produced one separate shadow price addition. Compact amount coverage moved
+55/56 to 56/56 while marker coverage remained 48/49. Raw outputs, existing
+fields, source references, schema, Precision v2.1, and citations were preserved.
+
+Assistant source-page review supports the sole addition, not complete-output
+acceptance. The recovery kernels took about 13 ms each, the experiment 2.920 s,
+and the enclosing job 46.124 s. No repeated extraction was demonstrated necessary
+or avoided. This deterministic control is not incremental Jev payoff.
+
+Published the unchanged recovery module and 37 fabricated-input tests, bringing
+the public suite to 199. Full-fragment citation coverage and cited name anchors
+remain separate from semantic truth. Grouping and translation equivalence need
+review; ambiguous candidates abstain, and shadow edits stay unaccepted.
+
+Rechecked the retained artifacts and inverse append accounting without rerunning
+experiments. TypeSafe guidance keeps exact values in code and confidence separate
+from correctness; Databricks guidance favors retained results over repeated
+inference. Only code, synthetic tests, and aggregates are published. Source
+content, extractions, private receipts, infrastructure, and deployment notebooks
+remain excluded. No additional source-bearing authorization or research-goal
+completion is implied by this publication.

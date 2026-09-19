@@ -17,6 +17,8 @@ and failures—not a production router or an accepted hotel-facts dataset.
   managed elements, cross-page context, and unresolved review states.
 - Reversible table-wrapper compaction with exact round-trip checks and
   original-content fallback; this is not a validated extractor input contract.
+- Citation interval unions that preserve uncited gaps, and annotation-preserving
+  compaction with synthetic regression tests; neither proves semantic support.
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -48,14 +50,16 @@ request and requires separate credentials and data-boundary approval.
 | Bounded Jev verifier | 3/5 error signals flagged; 0/3 false alarms | Four correlated, previously inspected cases; not calibrated acceptance |
 | Selective-parse rehearsal | 50 cases / 36 unique bundles; all 236 pages retained | Saved full-parser outputs; no new parsing or proved work avoided |
 | Reversible table compaction | Complete serialized envelopes 680,282 → 654,812 bytes (3.74% smaller) | Exact parser-output preservation, not measured inference savings |
-| Synthetic compact-input probe | All four inputs returned ten expected names and citations | No case passes the frozen narrow gate; defect attribution pending |
+| Synthetic compact-input probe | After checker review, compact STRING passes 10/10 narrow item checks | Post-hoc diagnostic; real source quality is separate |
+| Full-evidence menu compaction | 4.91% fewer input bytes; 112.352 → 117.254 s | One structured supplement price omitted; neither arm accepted |
 
 Token costs use observed usage and a retained published rate. They are not
 invoices or full pipeline costs. See the results document for stage boundaries,
 job startup, diagnostic denominators, and quality failures.
 
-Findings cover E26–E28 and preliminary E29 results as well as the earlier study.
-The offline suite contains 114 synthetic tests; it does not reproduce private
+Findings cover E26–E30, including the E29 checker correction and negative
+real-document compaction result, as well as the earlier study.
+The offline suite contains 144 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope

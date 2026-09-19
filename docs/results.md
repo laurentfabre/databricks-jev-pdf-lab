@@ -186,7 +186,7 @@ measured serving-token, invoice, model-latency, or incremental Jev benefit.
 The deterministic transform is equally available to the no-Jev control.
 Byte reduction alone does not justify a full-corpus inference trial.
 
-## Synthetic compact-input probe (E29; preliminary)
+## Synthetic compact-input probe (E29; frozen results and later review)
 
 Four synthetic inputs compared HTML/compact representations and STRING/VARIANT
 input types, using the frozen full schema, Precision v2.1, and citations.
@@ -205,21 +205,93 @@ expected citation kind. The frozen narrow checker produced:
 | VARIANT compact | bbox / 4 | 0/10 |
 | VARIANT HTML | bbox / 4 | 0/10 |
 
-**No case passes the whole narrow gate. These are not adjudicated accuracy
-scores.** Both original controls also fail, so the counts do not establish
-that compaction caused failures or improved quality. Model behavior,
-representation differences, and checker limitations still need separate
-review. Policies, legends, price basis, and details are not fully checked;
-citation overlap alone does not prove evidence supports a claim.
+**No case passes the original whole narrow gate.** These frozen scores remain
+unchanged. Subsequent saved-output review separated checker defects from real
+output failures; it does not turn these results into held-out accuracy scores.
 
 The VARIANT statement took 31.327 s total and the STRING statement 31.408 s.
 Each mixes original and compact inputs; these are not original-versus-compact
 latency measurements. The saved-output evaluation took 10.619316 s including
 9.210875 s fetch, within a 35.549 s job (5 s reported setup, 29 s execution).
 All 12 remote evaluator tests passed. Artifact/hash checks confirm consistency,
-not semantic correctness. No inference was repeated for
-this publication. The next gate is review of the retained failures, not a new
-full-corpus run or deployment of the compact representation.
+not semantic correctness. No inference was repeated for this publication.
+
+### Citation-checker correction (S035)
+
+The original checker required each complete name inside a single cited span.
+Seven name flags across the two STRING outputs were false: adjacent cited
+spans jointly covered the literal. The separate checker merges overlapping or
+adjacent intervals only; it never bridges an uncited gap or repairs a response.
+
+| Input | Frozen narrow items | Reviewed narrow items | Remaining failure |
+|---|---:|---:|---|
+| STRING compact | 7/10 | 10/10 | None in this bounded fixture |
+| STRING HTML | 2/10 | 3/10 | Six unsupported amount citations, two unsupported name citations, omitted policy |
+| VARIANT compact | 0/10 | 0/10 | Empty source-page fields despite bbox location |
+| VARIANT HTML | 0/10 | 0/10 | Same raw page-field failure |
+
+Compact STRING also passes separately added value/policy checks. Manual review
+covered all ten synthetic rows, sizes, bases, marker/allergen associations,
+pages, and both global policies. A small table remained HTML because compact
+encoding was larger; this is not a universal JSON-only input contract.
+
+The omitted HTML policy distinguishes unstated allergens from allergen-free
+food. It is a genuine omission, not a citation-checker defect. Citation bounds
+and exact literal matches alone still cannot establish semantic correctness.
+No output was changed and no source-page field was filled automatically.
+
+This saved-output review took 1.875500 s within a 21.466 s job; 18 remote
+synthetic tests passed, with no new AI call or PDF read. It justified a bounded
+real-evidence quality screen, not an accepted optimization or Jev benefit.
+
+## Full-evidence menu pair (E30)
+
+One previously inspected seven-page menu, 49 source elements, all original
+page labels, and the entire 12,578-character symbol-annotation suffix. The
+original arm exactly reused the prior enriched input. Eight table wrappers
+were compacted in the candidate; the complete original restores exactly.
+No evidence was selected away. Both new one-row statements used the same
+frozen schema/instructions, Precision v2.1, and citations.
+
+| Metric | Original | Compact |
+|---|---:|---:|
+| Complete input bytes | 27,183 | 25,849 |
+| Input characters | 24,936 | 23,602 |
+| Final statement total | 112.352 s | 117.254 s |
+| Execution component | 110.996 s | 115.908 s |
+| Matched offerings / reference | 52/52 | 52/52 |
+| Structured price amounts / reference | 56/56 | 55/56 |
+| Marker associations / reference | 48/49 | 48/49 |
+| Exact physical-page records | 52/52 | 52/52 |
+
+**4.9075% fewer bytes, but 4.902 s slower in this single concurrent pair.**
+Neither used a query-result cache. This is not a repeated latency distribution,
+an isolated model-service time, or a proven causal slowdown. No serving-token
+or attributable billing reduction was measured.
+
+Inspection confirmed that the compact output retained a supplement in prose
+but omitted its dedicated structured price; a mention is not field completeness.
+Both outputs also omit one explicit dietary attribute from its required marker
+field. Neither is accepted. Recognized legend categories differ between arms,
+and complete preparation-scope, multilingual-detail, policy, allergen, price-basis,
+and semantic citation review remains unfinished. The reference is partial,
+previously inspected, and not independently double-labelled.
+
+All 412 original and 457 compact non-null fields pass citation ID/bounds checks;
+that does not prove their citations support the fields. The original source
+observations and extraction outputs remain unchanged and private.
+
+Codec work: 0.005745 s. Preparation: 14.076467 s, including 12.794898 s Delta
+write/verification, within a 130.844 s job (96 s setup, 34 s execution).
+Saved-output evaluation: 12.366970 s within a 40.742 s job (5 s setup, 35 s
+execution; task elapsed 40.265 s); 29 remote tests passed. Twelve preparation tests also passed.
+These are research overheads, not savings. No fallback, parser, or Jev call
+was added. The deterministic transform is equally available without Jev.
+
+Decision: do not promote this candidate or launch a full-corpus compaction
+rollout on these results. Equal-quality end-to-end savings and incremental
+Jev payoff remain unproven; byte conservation is useful engineering evidence,
+not extraction-quality acceptance.
 
 ## What would establish payoff?
 

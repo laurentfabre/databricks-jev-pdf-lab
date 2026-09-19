@@ -92,3 +92,33 @@ continues to keep typed outputs and confidence separate from truth. The
 Databricks guidance supports reusing persisted outputs, not duplicate calls.
 No new hosted source-bearing request, deployment, or AI experiment was made
 for this update. The broader optimization objective remains unfinished.
+
+## 2026-09-19 — citation correction, real-document result, and publication
+
+S035 corrected seven false name-citation flags caused by names split across
+adjacent cited spans. Preserved the frozen checker scores and all raw outputs;
+published the separate interval-union functions and 18 synthetic tests. Gaps
+remain uncited. Genuine citation/policy omissions and empty page fields remain
+failures. The revised compact STRING result is a small inspected fixture,
+not independently held-out evidence.
+
+E30 used two new logical Precision inputs over one previously inspected full
+seven-page menu. Annotation-preserving compaction retained every source element
+and the complete observation suffix, with exact restoration. Complete input
+bytes fell 4.9075%. Final statement totals were 112.352 s original and 117.254 s
+compact: 4.902 s slower for compact in this single concurrent pair. The final
+112.352 s supersedes an earlier non-final 112.427 s observation retained privately.
+
+Both matched 52 offerings and physical pages. Original recovered 56/56 amounts,
+compact 55/56; a supplement survived in prose but not as a structured price.
+Both recovered 48/49 marker associations. Neither is accepted; full semantic
+and citation review is unfinished. No equal-quality saving or incremental
+Jev benefit was demonstrated. Do not promote the candidate on byte reduction.
+
+Observed the existing evaluator to terminal success and retrieved its saved
+artifacts without rerunning inference. Published only aggregates and reusable
+code, including 12 annotation-preservation tests; the public suite is now 144
+synthetic tests. No PDFs, excerpts, outputs, raw requests, private infrastructure,
+or execution receipts are included. Public visibility is not data-egress approval.
+TypeSafe guidance keeps literal coverage separate from semantic truth; Databricks
+guidance keeps persisted results and original execution handles authoritative.

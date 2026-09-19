@@ -4,6 +4,37 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-19 — targeted repair and cited field composition
+
+E35 compared two scoped Precision inputs, one with additional post-hoc assistant
+image observations. The enriched output recovered seven distinct legend entries,
+but both arms recovered none of eight conditional preparation-marker relations.
+Review corrected two matcher false negatives without accepting multilingual
+losses. Both outputs also retain field and policy failures; whole-output
+replacement would import unrelated regressions. Extraction took 36.356 s for
+both inputs together, excluding preparation, evaluation, and unmeasured review.
+
+E36 copied only the reviewed legend into two retained full-menu shadows. Every
+other response field remained exact, including 52 offerings and 56 amounts.
+Twelve existing donor citation spans per arm were rebased into exact composite
+input text, preserving namespaces, character offsets, and annotation origins.
+Derived envelopes are explicitly not new service responses; inverse restoration
+passes and full-output acceptance remains false. Kernels took 16–22 ms; the
+enclosing job took 25.397 s. Prerequisite E35 and review costs are additional.
+No new inference was performed by E36 or this publication update.
+
+Published the unchanged generic composer and 39 fabricated-input tests, bringing
+the public suite to 299. Real inputs, selections, reviews, origin maps, audits,
+outputs, notebooks, and receipts remain private. TypeSafe citation guidance
+keeps exact span preservation distinct from semantic support; Databricks
+guidance keeps retained results reusable without repeat inference. The frozen
+schema, instructions, Precision v2.1, and citation requirements are unchanged.
+No new source-bearing authorization, deployment, or account-scope change occurs.
+The initial multi-file documentation patch failed an outdated journal context;
+no partial documentation update was applied, and the corrected patch succeeded.
+Generalization, incremental semantic Jev value, and accepted-output savings
+remain unproven.
+
 ## 2026-09-17 — baseline and measurement corrections
 
 Froze the hotel-facts contract and retained Precision v2.1 with citations.

@@ -508,6 +508,82 @@ control. Semantic selection and complete source acceptance remain separate
 problems. Incremental Jev benefit and equal-quality cost/latency payoff remain
 unproven. No additional hosted source-bearing authorization is implied.
 
+## Targeted repair: enriched evidence, incomplete scope (E35)
+
+E35 compares two selected-page inputs under the same full schema, instructions,
+Precision v2.1, and citations. The control retains the original selected parser
+elements and provisional observations. The enriched input retains that exact
+control prefix and adds separately labelled post-hoc assistant image observations.
+This is a development comparison, not an automatic selector or independent holdout.
+Exactly two new logical extraction inputs were run; no Jev call was made.
+
+| Reviewed metric | Control | Review-enriched |
+|---|---:|---:|
+| Offerings / amounts retained | 13 / 16 | 13 / 16 |
+| Correct physical-page records | 13 | 13 |
+| Known item-marker associations retained | 8 | 8 |
+| Legend entries | 5, with conflations | 7 distinct |
+| Conditional preparation-marker relations recovered | 0/8 | 0/8 |
+| Applications of those relations to two parent offerings | 0/16 | 0/16 |
+| Unsupported generic basis defaults | 8 | 9 |
+
+The enriched arm's frozen matcher reported only 11/13 offerings and four missing
+amounts. Review found two matching false negatives caused by omitted parenthetical
+wording in one language, while preparation wording remained in other-language
+details. The frozen scores and outputs remain unchanged. Correcting the coverage
+attribution does not accept the multilingual omission or complete source fidelity.
+
+The seven-entry legend has reviewed spans, but glyph descriptions cite supplied
+assistant observations, not original parser text; meanings also cite source text.
+Neither arm's service citations overlap the supplied preparation observations.
+Nearby legend spans cannot be reused as evidence for preparation scope. Additional
+failures include unsupported bases, non-measurements in measurement fields,
+incomplete or missing policy coverage, source-parser spelling defects, inferred
+property naming, and multilingual losses. Both outputs remain rejected. The
+other pages and complete corpus are still required; empty allergen arrays imply
+no safety property.
+
+Preparation took 13.912259259 s inside a 41.564 s enclosing job. Extraction took
+36.356 s total / 35.148 s execution **for both inputs together**, not per arm.
+Evaluation took 8.328910561 s inside a 30.414 s job. Review cost is unmeasured.
+These are additional development costs, not matched savings against historical
+full extraction. Decision: do not replace whole outputs with the repair result;
+preserve useful fields without importing its unrelated regressions.
+
+## Reversible cited field-only composition (E36)
+
+E36 copies only the reviewed seven-entry legend from E35 into both retained E34
+full-menu shadows. All other response fields are exactly unchanged, including
+52 offerings, 56 amounts, policies, and prior reviewed corrections. It performs
+no semantic selection, new extraction, parsing, PDF read, or Jev call.
+
+The generic engine binds the exact base/donor responses, input strings, schema,
+origin records, selected fields, and supplied review. Both original input strings
+remain verbatim in a composite evidence string. Base citations stay unchanged;
+twelve existing donor spans per arm receive fresh integer IDs and rebased Unicode
+character offsets. Audits retain original IDs, intervals, cited-text hashes, and
+input-relative origin maps. Assistant observations remain labelled as such, and
+the base source map remains explicitly partial. No missing preparation citation
+is invented. The envelope is marked `service_response=false`, with exact inverse
+restoration and `quality_accepted=false`.
+
+| Metric | Original-derived shadow | Compact-derived shadow |
+|---|---:|---:|
+| Selected root fields | 1 | 1 |
+| Legend entries | 7 | 7 |
+| Items / amounts retained | 52 / 56 | 52 / 56 |
+| Existing donor citation spans rebased | 12 | 12 |
+| Composition kernel | 0.022471387 s | 0.016438170 s |
+
+All 39 new synthetic tests passed locally and remotely. The complete experiment
+took 3.027477890 s; its enclosing job took 25.397 s (task 24.956 s; reported
+setup 5 s / execution 19 s). E35's prerequisite extraction, preparation,
+evaluation, and unmeasured review costs are additional, not included in the
+composition kernels. Both full outputs remain rejected for unresolved conditional
+scope and other source/schema defects. This demonstrates reusable mechanical
+composition of supplied selections, not automatic correction, incremental Jev
+benefit, unseen-layout generalization, or equal-quality end-to-end savings.
+
 ## What would establish payoff?
 
 Freeze a candidate and a no-Jev ablation before an independently labeled,

@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Nineteen reusable Python modules and seventeen synthetic test modules.
+- Twenty reusable Python modules and eighteen synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -36,6 +36,11 @@ no private Git history or original evidence directory is imported.
 - The reviewed-field projection module and its 38 synthetic tests are unchanged
   copies. Only the generic execution engine and fabricated fixtures are included;
   real selection plans, source mappings, review evidence, and shadows are excluded.
+- The cited-field composition module and its 39 synthetic tests are unchanged
+  copies. Only generic code and fabricated fixtures are included. E35 is reported
+  as aggregate findings; its source-specific experiment harness is not included.
+  Real donor/base inputs, composition plans, origin maps, audits, and outputs
+  remain private, as do all preparation/extraction/evaluation notebooks.
 - GitHub Actions configuration is an inactive example under `examples/`.
   Activating it requires workflow-write permission; publication does not request
   additional token scopes or change account permissions.
@@ -106,6 +111,17 @@ Third-party work is linked and attributed, not vendored.
   Real plans and audits contain source/output values and must remain private.
   All shadows remain unaccepted; selection, review, and preparation costs are
   outside the measured projection kernels.
+- E35 adds post-hoc assistant image observations, not independent source labels.
+  Its legend improvement does not repair conditional scope or accept the output.
+  Corrected matcher false negatives do not excuse omitted multilingual wording.
+- E36 accepts only reviewed root-field selections under the benchmark's schema
+  shape and Precision v2.1 span-citation envelope, not arbitrary JSON Schema.
+  Review and origin hashes bind caller-supplied records; they do not validate
+  reviewer identity, source truth, origin-map completeness, or citation semantics.
+  Rebased citations preserve existing spans; they are not newly generated service
+  evidence. Inherited metadata must not be presented as confidence in composed
+  fields. Results are explicitly derived and unaccepted. Real composite text and
+  audits contain private data. Prerequisite extraction and review are not free.
 
 Publication is not deployment. No inference, dataset upload, job creation, or
 data-boundary change occurs when running the offline tests and example.

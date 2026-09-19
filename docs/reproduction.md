@@ -10,12 +10,13 @@ python3 examples/synthetic_rehearsal.py
 python3 scripts/check_publication.py
 ```
 
-There are 260 included synthetic tests: 93 from the initial snapshot, 21
+There are 299 included synthetic tests: 93 from the initial snapshot, 21
 table-codec tests, 18 citation-interval tests, and 12 annotation-preservation
 tests, plus 18 bounded-concurrency, 37 source-bound-recovery, and 23 schema-field
-audit tests, plus 38 reviewed-field-projection tests. The private project recorded 450
-passing synthetic tests, including evaluators not copied here. The public
-number must not be presented as 450.
+audit tests, plus 38 reviewed-field-projection and 39 cited-field-composition tests.
+The private project recorded 513 passing synthetic tests, including evaluators
+not copied here. The public
+number must not be presented as 513.
 
 The example fabricates a three-page document in memory. Tests stub the hosted
 transport and PyMuPDF page objects. No PDF library, model credential, or
@@ -67,6 +68,15 @@ the supplied semantic selections. The review digest is an integrity binding,
 not authentication or proof of truth. `reviewed_field_projection.project` has
 no I/O or model call; real plans and returned audits still contain private data.
 No real E34 selection plan or source review is included in this repository.
+
+Composition tests use fabricated donor/base responses, text, and review bindings.
+They check exact preservation of unselected fields, Unicode-character offsets,
+collision-free citation IDs, retained annotation origins, stale binding rejection,
+invalid spans, explicit derived status, and inverse restoration. They do not
+check whether a selected field is true, complete, or semantically supported.
+`cited_field_composition.compose` makes no I/O or model call; its composite text
+and returned audit must remain private when real inputs are used. The public
+suite does not reproduce E35 extraction or the private E36 source-level review.
 
 `examples/github-actions-offline-tests.yml` is an inactive CI template. No
 workflow is installed by this snapshot. An authorized maintainer may install

@@ -4,6 +4,23 @@ This is a sanitized decision log, not the original execution journal. Private
 statement IDs, job IDs, credentials, source contents, and raw receipts are not
 published. Dates below refer to the study's recorded experiment dates.
 
+## 2026-09-20 — deterministic billing attribution publication
+
+Added a reusable, offline reconciler and 17 synthetic tests. Signed originals,
+retractions and restatements survive reconciliation even when they share an ID;
+identical logical rows are deduplicated. Full-interval list-price matches and
+unique job-run bindings are required. Shared-warehouse rows remain unresolved.
+
+The methodology distinguishes real query tags from SQL comments, verified
+attribution from final billing, and unknown cost from zero. Query-tag verification
+and binding evidence are caller responsibilities, not model judgments or claims
+made by this offline module. A mapping-ready result grants no execution authority.
+
+TypeSafe's current building guidance informed keeping accounting and gates in
+code. This update includes no customer materials, private billing values, live
+observer, or new inference. The frozen hotel schema, Precision requirements and
+E47 findings are unchanged; this publication does not demonstrate new savings.
+
 ## 2026-09-19 — measured verifier sharing and requested publication
 
 E47 completed a separately authorized 100-attempt comparison over all 48

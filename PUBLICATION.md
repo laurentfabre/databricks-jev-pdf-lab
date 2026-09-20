@@ -6,7 +6,7 @@ no private Git history or original evidence directory is imported.
 
 ## Included and adapted
 
-- Thirty-three reusable Python modules and thirty synthetic test modules.
+- Thirty-four reusable Python modules and thirty-one synthetic test modules.
 - Frozen benchmark schema and instructions, unchanged.
 - Research findings, methodology, source-code analysis, and an offline example.
 - `cache_contract.py` and its tests replace the original workspace ID with
@@ -74,6 +74,13 @@ no private Git history or original evidence directory is imported.
   workspace description; executable logic and fabricated tests are unchanged.
   Real consent manifests, labels, packet identities, deployment notebooks,
   credentials, raw responses, per-claim judgments, and ledgers are excluded.
+
+The billing-attribution addition contains only generic reconciliation code and
+17 fabricated-input tests. Executable reconciliation logic is unchanged; its
+private experiment-specific docstring is generalized, and tests gain the public
+repository import path. No billing observer, query payload, real prices, usage
+records, customer findings, customer reports, or execution handles are included.
+The standalone methodology is not a publication of the separate customer study.
 
 ## Excluded
 
@@ -254,3 +261,11 @@ The probability-sum tolerance handles four rounded probabilities; it is not a
 semantic acceptance threshold. Published findings show changed model judgments
 despite exact claim/context reconstruction, so no equivalent-quality promotion
 follows. Three ambiguous labels stay separate from strict reference accuracy.
+
+The billing reconciler consumes caller-supplied normalized rows and verified
+run bindings; it does not fetch data, authenticate evidence, verify query tags,
+or prove billing completeness. Decimal operations use precision 100, not
+arbitrary-precision arithmetic for unlimited inputs. Warehouse-only allocation
+is deliberately unsupported. Its mapping gate is neither semantic acceptance
+nor permission to execute a paid experiment. See the billing methodology for
+input contracts and limitations.

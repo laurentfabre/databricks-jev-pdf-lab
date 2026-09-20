@@ -48,6 +48,9 @@ and failures—not a production router or an accepted hotel-facts dataset.
 - Matched single-question versus shared-state verifier scheduling with complete
   preflight allowlists, bounded attempts, fail-stop ledgers, and separate
   determinate/ambiguous reference accounting.
+- Deterministic reconciliation of observed usage: signed billing corrections,
+  decimal list pricing, unique job-run attribution, and explicit unresolved
+  shared-warehouse charges. See [billing methodology](docs/billing-attribution.md).
 - The frozen hotel-facts schema and instructions; Precision v2.1 and citations
   must remain enabled in any extraction experiment.
 - [Results, including negative outcomes](docs/results.md),
@@ -113,7 +116,7 @@ independent holdouts, and matched accepted-output economics remain open.
 E47 now measures hosted verifier overhead, not just serialized bytes. Its
 quality regression prevents promotion as an equal-quality replacement; two
 rounds on one inspected document do not establish independent generalization.
-The offline suite contains 645 synthetic tests; it does not reproduce private
+The offline suite contains 662 synthetic tests; it does not reproduce private
 document accuracy or historical timing measurements.
 
 ## Safety and scope
